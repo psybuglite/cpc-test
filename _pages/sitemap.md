@@ -1,4 +1,5 @@
 ---
-layout:   sitemap
-permalink: /sitemap/
+permalink: "/sitemap/"
+layout: sitemap
 ---
+

@@ -1,4 +1,5 @@
 ---
-layout:  copyright
-permalink: /copyright/
+permalink: "/copyright/"
+layout: copyright
 ---
+

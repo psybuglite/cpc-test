@@ -1,13 +1,14 @@
 ---
-title:           Ola Raheem
-layout:          director
-name:            Ola Raheem
-designation:     Director, Planning, Research and Strategy Department
-image:           /uploads/ola.jpg
-social-media:    none
-permalink:       /about/ola/
-rank:           2
+title: Ola Raheem
+permalink: "/about/ola/"
+layout: director
+name: Ola Raheem
+designation: Director, Planning, Research and Strategy Department
+image: "/uploads/ola.jpg"
+social-media: none
+rank: 2
 ---
+
 Ola Raheem is a Management Professional with over 25 years Corporate Affairs leadership experience in Manufacturing FMCG, Consultancy, ICT, Insurance, Health-Care, Telecommunications and Federal Public Service.
 
 Since joining Consumer Protection Council (CPC) in 2007, Ola has held key strategic positions in the Council including: Head of Administration department; Head of Consumer Education department; Director/ Coordinator of the South-West Zonal Office and currently, Director, Planning, Research and Strategy.
