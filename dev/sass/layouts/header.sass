@@ -1,0 +1,159 @@
+// 
+    // Global Header
+
+    // @package cpc
+    // @author  Kabolobari Benakole <i@kb.life>
+    // @version 1.0.0
+
+//
+
+
+.main-header
+  .top-header
+    max-width: 1024px
+    margin: 0 auto
+    display: flex
+    padding: 15px
+    justify-content: space-between
+    .logo-icon
+      display: flex
+      .logo
+        width: 80px
+        img
+          width: 100%
+      p
+        font-size: 18px
+        margin-left: 10px
+        margin-top: 20px
+        a
+          color: $primarycolor
+        a:visited
+          color: $primarycolor
+      .menu-icon
+        margin-left: 15px
+        display: none
+        font-size: 28px
+      .menu-icon:hover
+        cursor: pointer
+    .sign-complaint
+      padding-top: 10px
+      button
+        border: none
+        padding: 13px 20px
+        font-size: 14px
+        color: green
+        border-radius: 4px
+        margin-left: 5px
+      button:hover
+        cursor: pointer
+        background: $primarycolor
+        color: white
+      button.complaint
+        background: rgb(198, 45, 35)
+        color: white
+  .bottom-bar
+    background: $primarycolor
+  nav
+    max-width: 1024px
+    margin: 0 auto
+    padding: 0px 15px
+    ul
+      display: flex
+      font-size: 14px
+      font-weight: lighter
+      li
+        padding: 20px 0px
+        margin-right: 20px
+      a
+        padding: 18px 0px
+        color: rgba(255,255,255, 0.72)
+        transition: all 0.1s
+      a.is-active
+        border-bottom: 3px solid white
+        color: white
+      a:hover
+        border-bottom: 3px solid white
+        color: white
+      li.nav-search
+        display: flex
+        align-items: center
+
+.overlay
+  height: 100%
+  width: 0
+  position: fixed
+  z-index: 1000
+  top: 0
+  left: 0
+  background-color: rgb(255, 255, 255)
+  background-color: rgba(255, 255, 255, 1)
+  overflow-x: hidden
+  transition: 0.5s
+
+.overlay-content
+  position: relative
+  top: 10%
+  width: 100%
+  text-align: center
+  margin-top: 30px
+
+.overlay
+  a
+    padding: 8px
+    text-decoration: none
+    font-size: 26px
+    color: $primarycolor
+    display: block
+    transition: 0.3s
+    &:hover, &:focus
+      color: black
+  .closebtn
+    position: absolute
+    top: 20px
+    right: 45px
+    font-size: 30px
+
+@media screen and (max-width: 690px)
+  .main-header
+    .top-header
+      .logo-icon
+        display: flex
+        .logo
+          width: 60px
+        p
+          display: none
+
+        .menu-icon
+          display: block
+          font-size: 12px
+          margin-left: 10px
+          margin-top: 8px
+        .menu-icon:hover
+          cursor: pointer
+      .sign-complaint
+        padding-top: 5px
+        button
+          border: none
+          padding: 8px 10px
+          font-size: 12px
+          color: green
+          border-radius: 4px
+          margin-left: 3px
+        button:hover
+          cursor: pointer
+          background: #ccc
+        button.complaint
+          background: rgb(198, 45, 35)
+          color: white
+    nav
+      display: none
+      
+
+@media screen and (max-height: 450px)
+  .overlay
+    a
+      font-size: 20px
+    .closebtn
+      font-size: 40px
+      top: 15px
+      right: 35px

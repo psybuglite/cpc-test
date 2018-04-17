@@ -1,0 +1,82 @@
+.submit-testimonial
+  display: flex
+  button
+    margin: 35px 0px 10px 40px
+    padding: 10px 30px
+    background: $primarycolor
+    color: white
+    border: none
+    border-radius: 3px
+    font-weight: lighter
+    font-size: 14px
+
+.testimonials-area
+  .testimonials
+    max-width: 1024px
+    margin: 0 auto
+    padding: 30px 15px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    list-style: none
+    .testimonial
+      width: 460px
+      padding: 20px
+      box-shadow: 0px 2px 25px 0px rgba(0,0,0,0.1)
+      margin: 10px
+      p
+        color: #707070
+        font-size: 17px
+      .testifier-details
+        display: flex
+        .testifier-image
+          width: 80px
+          height: 80px
+          margin-right: 15px
+          border-radius: 50%
+          img
+            width: 100%
+            height: 100%
+            border-radius: 50%
+        h4
+          margin: 20px 0px 0px 0px
+
+.load-more-button
+  display: flex
+  justify-content: center
+  margin: 10px 0px 50px 0px
+  button
+    color: $primarycolor
+    padding: 10px 30px
+    border: none
+    background: none
+    font-size: 15px
+
+@media screen and (max-width: 1000px)
+  .testimonials-area
+    .testimonials
+      .testimonial
+        width: 340px
+        margin: 10px
+
+@media screen and (max-width: 768px)
+  .submit-testimonial
+    display: block
+    h1
+      margin-bottom: 10px
+    button
+      margin: 0px 0px 30px 0px
+      padding: 10px 30px
+      background: $primarycolor
+      color: white
+      border: none
+      border-radius: 3px
+      font-weight: lighter
+      font-size: 14px
+
+@media screen and (max-width: 750px)
+  .testimonials-area
+    .testimonials
+      .testimonial
+        width: 100%
+        margin: 10px 0px

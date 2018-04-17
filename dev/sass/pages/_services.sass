@@ -1,0 +1,58 @@
+.cards-carousel
+  background: #FAFAFA
+  padding: 0
+  margin: 0
+  list-style: none
+  .carousel-cell
+    width: 100%
+    height: auto
+    margin-right: 10px
+    counter-increment: carousel-cell
+
+.faq
+  max-width: 1024px
+  list-style: none
+  padding: 0 15px
+  margin: 0 auto 30px auto
+  h2 
+    color: $primarycolor
+  p 
+    font-size: 17px
+    padding-left: 30px
+.depts
+  font-size: 17px
+  display: block
+  max-width: 1024px
+  margin: 0 auto
+  padding: 0 15px 30px 15px
+
+
+.ul 
+  max-width: 1024px
+  margin: 0 auto
+  padding: 0px 15px
+  list-style: none
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-gap: 20px
+
+.ul a 
+  padding: 20px 10px
+  margin: 20px 0px
+  text-align: center
+  transition: all 0.3s
+  box-shadow: 0px 1px 11px 0px #ccc
+
+
+@media screen and (max-width: 500px) 
+  .ul 
+    margin: 0 auto 10px auto
+    padding: 0px 15px
+    grid-template-columns: 1fr
+    grid-gap: 2px
+  
+
+  .ul a 
+    padding: 20px 10px
+    margin: 5px 0px
+  

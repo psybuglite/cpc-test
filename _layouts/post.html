@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+{% include breadcrumbs.html %}
+
+<div class="page-header-title">
+    <h1>{{ page.title }}</h1>
+    <div class="big-bars">
+      <div class="green-bar"></div>
+      <div class="grey-bar"></div>
+    </div>
+</div>
+
+<div class="post-area">
+    <div class="post-content">
+        <img src="{{ page.image }}" alt="{{ page.title }}" width="100%">
+        <h3 class="post-date">{{ page.date | date_to_long_string }}</h3>
+        {{ content }}
+    </div>
+</div>
+

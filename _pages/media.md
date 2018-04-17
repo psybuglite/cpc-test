@@ -1,0 +1,4 @@
+---
+layout: media
+permalink: media
+---

@@ -1,0 +1,36 @@
+---
+layout:     default
+---
+{% include breadcrumbs.html %}
+
+<section class="page-header-title">
+    <div class="submit-testimonial">
+      <h1>Consumer Testimonials</h1>
+      <a href="http://user.cpc.softcom.ng/signin" target="_blank"><button>Submit a Testimonial</button></a>
+    </div>
+    <div class="big-bars">
+      <div class="green-bar"></div>
+      <div class="grey-bar"></div>
+    </div>
+</section>
+
+
+<section class="testimonials-area">
+  <ul class="testimonials">
+
+      {% assign sortedtestimonials = site.testimonials | sort: 'name' %}
+      {% for testifier in sortedtestimonials %}
+        <li class="testimonial">
+          <p>{{ testifier.testimonial }}</p>
+          <div class="testifier-details">
+            <div>
+              <h4>{{ testifier.name }}</h4>
+              <p>{{ testifier.date | date: "%F" }}</p>
+            </div>
+          </div>
+        </li>
+
+      {% endfor %}
+
+  </ul>
+</section>

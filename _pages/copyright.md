@@ -1,0 +1,4 @@
+---
+layout:  copyright
+permalink: /copyright/
+---

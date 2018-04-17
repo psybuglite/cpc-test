@@ -1,0 +1,87 @@
+---
+layout:  default
+---
+{% include breadcrumbs.html %}
+
+<section class="page-header-title">
+    <h1>CPC Site Map</h1>
+    <div class="big-bars">
+      <div class="green-bar"></div>
+      <div class="grey-bar"></div>
+    </div>
+</section>
+
+
+<section class="sitemap-lists">
+  <ul class="main-ul">
+    <li>
+    {% for item in site.data.about_cpc.cpc %}
+    <h3>{{ item.title }}</h3>
+      <ul>
+        {% for entry in item.subpages %}
+        <li><a href="{{ site.url }}{{ entry.url }}">{{ entry.page }}</a></li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+    </li>
+    <li>
+      <h3>Directors</h3>
+      <ul>
+          {% assign sorted_directors = site.directors | sort: 'rank' %}
+          {% for director in sorted_directors %}
+          <li><a href="{{ site.url }}{{ director.permalink }}">{{ director.designation }}</a></li>
+          {% endfor %}
+      </ul>
+    </li>
+    <li>
+      <h3>Departments</h3>
+      <ul>
+        {% for department in site.departments %}
+        <li><a href="{{ site.url }}{{ department.url }}">{{ department.department }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+    <li>
+        {% for item in site.data.contact_cpc.cpc %}
+        <h3>{{ item.title }}</h3>
+            <ul>
+            {% for entry in item.subpages %}
+            <li><a href="{{ site.url }}{{ entry.url }}">{{ entry.page }}</a></li>
+            {% endfor %}
+            </ul>
+        {% endfor %}
+    </li>
+  </ul>
+  <div class="sub-ul">
+    <h1>Consumers, Businesses, and NGOs</h1>
+    <hr/>
+  </div>
+  <ul class="main-ul">
+    {% for item in site.data.cbn.cbn %}
+    <li>
+      <h3>{{ item.title }}</h3>
+      <ul>
+            {% for entry in item.subpages %}
+            <li><a href="{{ site.url }}{{ entry.url }}">{{ entry.page }}</a></li>
+            {% endfor %}
+      </ul>
+    </li>
+    {% endfor %}
+  </ul>
+  <div class="sub-ul">
+    <h1>CPC Apps</h1>
+    <hr/>
+  </div>
+
+  <ul class="main-ul">
+    <li>
+      <h3>Mobile and Web Apps</h3>
+      <ul>
+        <li><a href="https://user.cpc.softcom.ng">User Web App</a></li>
+        <li><a href="">Android</a></li>
+        <li><a href="">iOS</a></li>
+      </ul>
+    </li>
+  </ul>
+  
+</section>

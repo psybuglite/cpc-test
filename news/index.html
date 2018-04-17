@@ -1,0 +1,32 @@
+---
+layout:     default
+---
+{% include breadcrumbs.html %}
+
+<section class="page-header-title">
+    <h1>News</h1>
+    <div class="big-bars">
+      <div class="green-bar"></div>
+      <div class="grey-bar"></div>
+    </div>
+</section>
+
+
+<section class="how-to-videos">
+  <div class="videos-area">
+    <div class="videos">
+    {% for post in site.posts %}
+    {% if post.category contains 'news' %}
+      <a href="{{ site.url }}{{ post.url }}">
+        <div class="video">
+          <div class="video-image">
+            <img src="{{ site.url }}{{ post.image }}" alt="">
+          </div>
+          <p class="video-title">{{ post.title }}</p>
+        </div>
+      </a>
+    {% endif %}
+    {% endfor %}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,73 @@
+// 
+    // Global Footer
+
+    // @package cpc
+    // @author  Kabolobari Benakole <i@kb.life>
+    // @version 1.0.0
+
+//
+
+// Site Footer
+.site-footer
+    background-color:                   $primarycolor
+    color:                              $whitesmoke
+    padding:                            $space-md 0
+
+    .sitemap
+        li
+            a
+                position:               relative
+                display:                block
+                color:                  $whitesmoke
+                opacity:                0.72
+                padding:                2px 0
+                +caps( 15px, $thin, inherit, 0 )
+                
+                &.is-active,
+                &:hover
+                    opacity:            1
+
+    .social-media-links
+        a
+            display:                    inline-block
+            &:nth-child(even)
+                padding:                0 $space
+            svg
+                width:                  20px
+                height:                 20px
+
+    .colophon
+        margin-top:                     $space-sm
+        padding-top:                    $space-sm
+        border-top:                     1px solid rgba( 255, 255, 255, 0.2 )
+        span
+            opacity:                    0.7
+        a
+            color:                      rgba( 255, 255, 255, 1 )
+            &:active, &:focus, &:hover, &:visited
+                color:                  rgba( 255, 255, 255, 0.7 )
+
+.apps
+  padding: 0
+  margin: 0
+  list-style: none
+  li
+    width: 140px
+    background: white
+    border-radius: 5px
+    display: inline-block
+
+.cols, .bottom-footer
+  padding-top: 20px
+.w-link a
+  color: white
+
+
+#breadcrumbs
+  max-width: 1024px
+  margin: 0 auto
+  padding: 20px 15px 0px 15px
+  a
+    color: $primarycolor
+  a:visited
+    color: $primarycolor

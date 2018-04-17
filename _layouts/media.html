@@ -1,0 +1,25 @@
+---
+layout:     default
+---
+
+{% include breadcrumbs.html %}
+
+<section class="page-header-title">
+    <h1>CPC Media Gallery</h1>
+    <div class="big-bars">
+      <div class="green-bar"></div>
+      <div class="grey-bar"></div>
+    </div>
+</section>
+
+<section class="media">
+    <ul>
+        {% for photo in site.gallery %}
+            <li>
+                <a href="{{ site.url }}{{ photo.file_image }}" target="_blank">
+                    <img border="0" align="center" src="{{ site.url }}{{ photo.file_image }}"/>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</section>

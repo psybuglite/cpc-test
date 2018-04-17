@@ -1,0 +1,4 @@
+---
+layout: oops
+permalink: /uploads/
+---

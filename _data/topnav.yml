@@ -1,0 +1,14 @@
+- name: Home
+  link: /
+- name: About
+  link: /about/
+- name: Consumers
+  link: /consumers/
+- name: Service Providers
+  link: /service-providers/
+- name: NGOs
+  link: /ngos/
+- name: How To...
+  link: /how-to/
+- name: Contact
+  link: /contact/

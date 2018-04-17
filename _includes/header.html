@@ -1,0 +1,61 @@
+<header class="main-header">
+    <div class="top-bar">
+        <div class="top-header">
+            <div class="logo-icon">
+                <div class="logo"><a href="/"><img src="{{ site.url }}/uploads/logo.jpg" alt=""></a></div>
+                <p><a href="/">Consumer Protection Council</a></p>
+                <div class="menu-icon" onclick="openNav()" style="font-size: 24px">&#9776;</div>
+            </div>
+            <div class="sign-complaint">
+                <a href="http://user.cpc.softcom.ng/signin" target="_blank"><button>Sign In</button></a>
+                <a href="http://user.cpc.softcom.ng/complain" target="_blank"><button class="complaint">File Complaint</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <nav class="main-nav">
+            <ul class="none m-0 d-flx al-i-c">
+                {% for link in site.data.topnav %} {% assign class = "" %}
+                  {% if link.link == page.url %} 
+                    {% assign class = class | append: " is-active" %} 
+                  {% endif %}
+                <li>
+                    <a href="{% if link.new_window %}{{ link.link }}{% else %}{{ site.url }}{{ link.link }}{% endif %}" class="{{ class }}" {% if link.new_window %}target="_blank" {% endif %}>
+                        {{ link.name }}
+                    </a>
+                </li>
+                
+                {% endfor %}
+                <li class=".nav-search">
+                    <a href="{{ site.url }}/search">{% include icons.html icon="search" %} Search</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/consumers/">Consumer</a>
+    <a href="/service-providers/">Service Provider</a>
+    <a href="/ngos/">NGOs</a>
+    <a href="/how-to/">How To...</a>
+    <a href="/contact/">Contact</a>
+    <a href="/search/">{% include icons.html icon="search" %} Search</a>
+  </div>
+</div>
+
+
+
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
+    
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>

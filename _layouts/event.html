@@ -1,0 +1,25 @@
+---
+layout:     default
+---
+
+{% include breadcrumbs.html %}
+
+{% assign event = site.news | where: 'title', page.title %}
+<section class="page-header-title">
+    <a href="{{ site.url }}/news" class="submit-testimonial"><button>Back</button></a>
+
+    <h3>{{ page.title }}</h3>
+    <div class="big-bars">
+      <div class="green-bar"></div>
+      <div class="grey-bar"></div>
+    </div>
+</section>
+
+<div class="post-area">
+    <div class="post-content">
+        <h3 class="post-date">{{ page.date | date_to_long_string }}</h3>
+        {{ content }}
+    </div>
+</div>
+
+

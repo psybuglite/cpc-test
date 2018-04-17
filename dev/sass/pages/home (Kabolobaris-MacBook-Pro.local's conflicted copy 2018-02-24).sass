@@ -1,0 +1,60 @@
+// 
+    // Home Page
+
+    // @package cpc
+    // @author  Kabolobari Benakole <kb@softcom.ng>
+    // @version 1.0.0
+    
+//
+
+// Hero Area
+.hero
+    // padding:                0
+    // @media #{ $largeup }
+    //     padding:            0 $space
+
+
+// Stats Area
+.stats
+
+    .big-number
+        display:            block
+        font-size:          1.96rem
+        font-weight:        $thin
+        color:              $primarycolor
+        @media #{ $smallup }
+            font-size:      3.96rem
+        @media #{ $mediumup }
+            font-size:      4.96rem
+
+    .explainer-text
+        display:            block
+        transform:          translateY(-$space-xs)
+        +caps( $nanofont, $medium, uppercase, 1px )
+
+
+
+// Testimonials
+.testimonials
+
+    .blurb
+        padding:            $space-sm
+        border:             $borderline
+        border-radius:      4px
+        max-width:          576px
+
+    .details
+        padding:            $space 0
+        display:            flex
+        align-items:        center
+
+        .name
+            font-weight:    $bold
+            display:        block
+
+        .loc,
+        .date
+            font-size:      0.9rem
+
+
+

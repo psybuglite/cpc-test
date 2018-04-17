@@ -1,0 +1,18 @@
+{% for item in site.data.sitemap.sitemap %}
+    <div class="cols">
+        <h3 class="m-0 pb-h co-white microtext fw-normal">{{ item.title }}</h3>
+        <ul class="none m-0">
+            {% for entry in item.subpages %}
+            {% assign class = "" %}
+            {% if entry.url == page.url %}
+                {% assign class = class | append: " is-active" %}
+            {% endif %}
+                <li>
+                    <a href="{% if entry.new_window %}{{ entry.url }}{% else %}{{ site.url }}{{ entry.url }}{% endif %}" {% if entry.new_window %}target="_blank"{% endif %} class="{{ class }}">
+                        {{ entry.page }}
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endfor %}

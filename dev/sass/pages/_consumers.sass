@@ -1,0 +1,141 @@
+.with-left-nav
+  max-width: 1024px
+  margin: 30px auto
+  padding: 15px
+  display: flex
+  .left-nav
+    margin-right: 20px
+    width: 300px
+    p
+      padding: 20px 0px
+      border-bottom: 0.5px solid rgba(0,0,0,0.4)
+      font-size: 16px
+    ul
+      list-style: none
+      padding: 0
+      li
+        margin: 15px 0px
+        font-size: 16px
+        a
+          color: #707070
+        a.active, a:hover
+          color: $primarycolor
+
+  .right-content
+    width: 700px
+    .page-header-title
+      padding: 0px
+      h1
+        margin-top: 20px
+        color: black
+    .post-content
+      margin: 30px 0px
+      h1
+        color: $primarycolor
+      p
+        font-size: 17px
+      .green-text
+        font-weight: bolder
+        color: $primarycolor
+      li
+        font-size: 17px
+    
+.cpc-bottom-links
+  margin-bottom: 40px
+  .cpc-links
+    max-width: 1024px
+    margin: 0 auto
+    padding: 0px 15px 
+    .cpc-link-cards
+      display: flex
+      justify-content: space-around
+      .link-card
+        box-shadow: 0px 2px 25px 0px rgba(0,0,0,0.1)
+        width: 450px
+        padding: 20px
+        .file-image
+          width: 100px
+        span
+          color: black
+
+.nested
+  margin-left: 20px
+
+.ul
+  max-width: 1024px
+  margin: 0 auto
+  padding: 0px 15px
+  list-style: none
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-gap: 20px
+  a
+    padding: 20px 10px
+    margin: 20px 0px
+    text-align: center
+    transition: all 0.3s
+    box-shadow: 0px 1px 11px 0px #ccc
+    font-size: 20px
+
+.post-date
+  margin-bottom: 30px
+  padding-bottom: 30px
+  border-bottom: 5px solid $primarycolor
+  max-width: 200px
+
+@media screen and (max-width: 500px)
+  .ul
+    margin: 0 auto 10px auto
+    padding: 0px 15px
+    grid-template-columns: 1fr
+    grid-gap: 2px
+    a
+      padding: 20px 10px
+      margin: 5px 0px
+      font-size: 18px
+
+@media screen and (max-width: 700px)
+  .with-left-nav
+    max-width: 1024px
+    margin: 30px auto
+    padding: 15px
+    display: flex
+    .left-nav
+      display: none
+
+    .right-content
+      max-width: 700px
+      .page-header-title
+        padding: 0px
+        h1
+          margin-top: 20px
+      .post-content
+        margin: 30px 0px
+        h1
+          color: $primarycolor
+        p
+          font-size: 17px
+        .green-text
+          font-weight: bolder
+          color: $primarycolor
+
+@media screen and (max-width: 970px)
+  .cpc-bottom-links
+    margin-bottom: 10px
+    .cpc-links
+      max-width: 1024px
+      margin: 0 auto
+      padding: 0px 15px 
+      .cpc-link-cards
+        display: flex
+        justify-content: space-around
+        flex-wrap: wrap
+        .link-card
+          box-shadow: 0px 2px 25px 0px rgba(0,0,0,0.1)
+          width: 100%
+          padding: 20px
+          margin: 20px 0px
+          .file-image
+            width: 100px
+          span
+            color: black

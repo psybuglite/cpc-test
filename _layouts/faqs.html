@@ -1,0 +1,24 @@
+---
+layout:     default
+---
+
+{% include breadcrumbs.html %}
+
+<section class="page-header-title">
+    <h1>Frequently Asked Questions (FAQs)</h1>
+    <div class="big-bars">
+      <div class="green-bar"></div>
+      <div class="grey-bar"></div>
+    </div>
+</section>
+
+<section class="section">
+  <ul class="faq">
+    {% for qa in site.faqs %}
+      <li>
+        <h2><strong>Q: </strong>{{ qa.question }}</h2>
+        <p>{{ qa.answer }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</section>

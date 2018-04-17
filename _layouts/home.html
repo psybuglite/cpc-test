@@ -1,0 +1,164 @@
+---
+layout:     default
+---
+
+
+
+
+  <section class="slider-actions">
+    <div class="slider col-md-8">
+      <ul class="about-carousel" data-flickity='{ "autoPlay": true, "contain": true, "prevNextButtons": true, "pageDots": false}'>
+        
+        {% assign sorted_posts = site.posts | where: 'category', 'consumer-blog' %}
+        {% for post in sorted_posts limit: 3 %}
+
+
+            <li class="carousel-cell">
+                <img src="{{ post.image }}">
+                <a href="{{ site.url }}{{ post.url }}" class="carous">
+                  <div class="carousel-caption">
+                    <p class="caption">{{ post.content | truncatewords: 12 }}</p>
+                  </div>
+                </a>
+            </li>
+
+ 
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="actions col-md-4">
+      <a href="http://user.cpc.softcom.ng/complain" target="_blank">
+        <div class="action">
+          <div class="action-image">
+            <img src="../uploads/red.svg" alt="">
+          </div>
+          <div class="action-text">
+            <h4>File Complaint</h4>
+            <p>Filing a complaint will help CPC to really serve you better.</p>
+          </div>
+        </div>
+      </a>
+      <a href="http://user.cpc.softcom.ng/signin" target="_blank">
+        <div class="action">
+          <div class="action-image">
+            <img src="../uploads/blue.svg" alt="">
+          </div>
+          <div class="action-text">
+            <h4>Leave a Review</h4>
+            <p>Your reviews can help service providers know what they are doing wrong.</p>
+          </div>
+        </div>
+      </a>
+      <a href="http://user.cpc.softcom.ng/signin" target="_blank">
+        <div class="action">
+          <div class="action-image">
+            <img src="../uploads/amber.svg" alt="">
+          </div>
+          <div class="action-text">
+            <h4>Track Complaint</h4>
+            <p>Keep track of your complaints and account with CPC.</p>
+          </div>
+        </div>
+      </a>
+      <a href="/consumers/">
+        <div class="action">
+          <div class="action-image">
+            <img src="../uploads/lightgreen.svg" alt="">
+          </div>
+          <div class="action-text">
+            <h4>Know Your Rights</h4>
+            <p>Know your rights and responsibilities as a consumer.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="cpc-stats">
+    <div class="stats">
+      <div class="stat all-stat">
+        <p class="date"></p>
+        <p class="cpc-name">Consumer Protection Council</p>
+      </div>
+      <div class="stat mid-stat1">
+        <h2>12.9M+</h2>
+        <p>ALL CASES</p>
+      </div>
+      <div class="stat mid-stat2">
+        <h2>2.8M+</h2>
+        <p>OPEN CASES</p>
+      </div>
+      <div class="last-stat stat">
+        <h2>9.1M+</h2>
+        <p>RESOLVED CASES</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="consumer-testimonials">
+    <div class="consumer-top-title">
+      <h1>Consumer testimonials</h1>
+      <a href="/testimonials/"><span class="prefix">View More</span> {% include icons.html icon="arrow" %}</a>
+    </div>
+    <ul class="about-carousel testimonials-slider" data-flickity='{ "autoPlay": true, "contain": true, "prevNextButtons": true, "pageDots": false, "wrapAround": true }'>
+      {% for testimony in site.testimonials %}
+        <li class="item carousel-cell">
+          <div class="testimonial-text">
+            <p>{{ testimony.testimonial }}</p>
+          </div>
+          <div class="consumer-info">
+            <div class="consumer-details">
+              <h4>{{ testimony.name }}</h4>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <seciton class="from-consumer-blog">
+    <div class="from-consumer-blog-content">
+        <div class="from-consumer-blog-title">
+            <h2>From the Consumer Blog</h2>
+            <a href="/consumer-blog/"><span class="prefix">View More</span> {% include icons.html icon="arrow" %}</a>
+        </div>
+        <ul class="index-blog-articles">
+                {% assign sorted_posts = site.posts | where: 'category', 'consumer-blog' %}
+                {% for post in sorted_posts limit: 2 %}
+              <li class="index-blog-article">
+                  <div class="index-blog-image">
+                    <a href="{{ site.url }}{{ post.url }}">
+                      <img src="{{ post.image }}" alt="">
+                    </a>
+                  </div>
+                  <div class="index-blog-snippet">
+                    <a href="{{ site.url }}{{ post.url }}">
+                    <h3 class="post-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title | truncatewords: 8 }}</a></h3>
+                    </a>
+                    <div class="thin-bar"></div>
+                    <p class="blog-post-snippet">
+                      {{ post.content | truncatewords: 12 }}
+                    </p>
+                    <a href="{{ site.url }}{{ post.url }}"><span class="prefix">Read More</span>{% include icons.html icon="arrow" %}</a>
+                  </div>
+                </li>
+          {% endfor %}
+        </ul>
+    </div>
+  </seciton>
+
+
+  <script>
+  
+  var now = new Date();
+  var options = {
+      year: 'numeric',
+      month: 'long'
+  };
+
+  var date = now.toLocaleString('en-us', options);
+  var cpcDate = document.querySelector(".date");
+
+  cpcDate.innerHTML = date;
+
+  </script>

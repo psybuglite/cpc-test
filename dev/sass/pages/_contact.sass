@@ -1,0 +1,36 @@
+.secondary-title
+  h1
+    max-width: 1024px
+    margin: 0 auto
+    padding: 0px 15px
+
+.contact-area
+  h4
+    margin-top: 0
+    font-weight: bold
+  ul
+    padding: 0 15px
+    margin: 30px auto
+    list-style: none
+    max-width: 1024px
+    display: flex
+    flex-wrap: wrap
+    li
+      a, p
+        font-size: 17px
+        line-height: 17px
+      a
+        margin-bottom: 5px
+      border-left: 2px solid $primarycolor
+      padding-left: 30px
+      width: 45%
+      margin: 0px 20px 50px 0px
+
+@media screen and (max-width: 500px)
+  .contact-area
+    ul
+      li
+        border-left: 2px solid $primarycolor
+        padding-left: 30px
+        width: 100%
+        margin: 20px 0px 20px 0px

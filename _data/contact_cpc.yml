@@ -1,0 +1,11 @@
+cpc:
+  - title: Contact
+    subpages:
+      - page: Contact
+        url:  /contact
+      - page: Testimonials
+        url:  /testimonials
+      - page: Guides and How-To
+        url:  /how-to
+      - page: Complaints
+        url:  https://user.cpc.softcom.ng

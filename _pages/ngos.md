@@ -1,0 +1,4 @@
+---
+layout: ngos
+permalink: /ngos/
+---

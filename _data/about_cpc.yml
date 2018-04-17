@@ -1,0 +1,25 @@
+cpc:
+  - title: About CPC
+    subpages:
+      - page: About CPC
+        url: /about
+      - page: Redress Mechanism
+        url: /consumers/complaints-handling
+      - page: Departments
+        url:  /departments
+      - page: FAQ
+        url:  /faqs
+      - page: News and Events
+        url:  /events
+      - page: Regulators
+        url:  /regulators
+      - page: Downloads
+        url:  /docs
+      - page: Policy
+        url:  /policy
+      - page: Terms
+        url:  /terms
+      - page: Copyright
+        url:  /copyright
+      - page: Search
+        url:  /search

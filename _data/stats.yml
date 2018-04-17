@@ -1,0 +1,5 @@
+# Live Stats from App
+stats:
+  complaints_open:      1,245
+  complaints_pending:   456
+  complaints_resolved:  789

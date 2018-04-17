@@ -1,0 +1,39 @@
+cbn:
+  - title: For Consumers
+    subpages:
+      - page: Consumers Rights
+        url: /consumers/rights
+      - page: Consumer Postcards
+        url: /consumers/post-cards
+      - page: Banned Imports
+        url: /consumers/banned-goods
+      - page: Prohibited Items
+        url: /consumers/prohibited-goods
+      - page: Responsibilities
+        url: /consumers/responsibilities
+      - page: Complaints Handling
+        url: /consumers/complaints-handling
+      - page: Consumer Blog
+        url: /consumer-blog
+  - title: For Businesses
+    subpages:
+      - page: Business Obligations
+        url: /service-providers/obligations
+      - page: Sales Promotions Guidelines
+        url: /service-providers/guidelines
+      - page: Approved Sales Promotion
+        url: /docs
+      - page: Sales Promotion Registration
+        url: /docs
+      - page: Sales Promotion Fees
+        url: /docs
+      - page: Penalty Table
+        url: /docs
+  - title: For NGOs
+    subpages:
+      - page: For NGOs
+        url: /about
+      - page: Approved NGOs
+        url: /consumers/complaints-handling
+      - page: NGO registration
+        url:  /departments

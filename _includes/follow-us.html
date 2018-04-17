@@ -1,0 +1,19 @@
+{% if site.social_media %}
+    <p class="social-media-links">
+        {% if site.social_media.twitter %}
+            <a href="//twitter.com/{{ site.social_media.twitter }}" target="_blank" class="whitesmoke-links">
+                {% include icons.html icon="twitter" %}
+            </a>
+        {% endif %}
+        {% if site.social_media.facebook %}
+            <a href="//facebook.com/{{ site.social_media.facebook }}" target="_blank" class="whitesmoke-links">
+                {% include icons.html icon="facebook" %}
+            </a>
+        {% endif %}
+        {% if site.social_media.instagram %}
+            <a href="//instagram.com/{{ site.social_media.instagram }}" target="_blank" class="whitesmoke-links">
+                {% include icons.html icon="instagram" %}
+            </a>
+        {% endif %}
+    </p>
+{% endif %}

@@ -1,0 +1,27 @@
+---
+layout:     default
+---
+{% include breadcrumbs.html %}
+
+{% assign department = site.departments | where: 'title', page.title %}
+
+
+<div class="page-header-title">
+    <div class="submit-testimonial">
+        <h1>{{ page.department }}</h1>
+        <a href="{{ site.url }}/departments"><button>Back to Departments</button></a>
+      </div>
+    <div class="big-bars">
+      <div class="green-bar"></div>
+      <div class="grey-bar"></div>
+    </div>
+</div>
+
+
+<div class="section">
+  <div class="depts">
+    {{ page.content }}
+  </div>
+</div>
+
+

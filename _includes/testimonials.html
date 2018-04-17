@@ -1,0 +1,34 @@
+<section class="testimonials boxed-width wrapper will-grow">
+    <h2 class="section-title mt-0">
+        <a href="{{ site.url }}/testimonials" class="d-flx al-i-c j-c-sb">
+            <span>Testimonials</span>
+            <span class="view-more">
+                <span class="prefix">View More</span>
+                {% include icons.html icon="arrow-right" %}
+            </span>
+        </a>
+    </h2>
+    <div class="uk-position-relative uk-visible-toggle" uk-slider="animation: pull; velocity: 1.5; autoplay: true; autoplay-interval: 3500;">
+        <ul class="none m-0 uk-slider-items">
+            {% for item in site.testimonials limit: 5 %}
+                <li class="uk-width-1-1">
+                    <p class="mb-0 smalltext blurb">
+                        {{ item.testimonial | truncatewords: 40 }}
+                    </p>
+                    <div class="details">
+                        <img src="{{ site.url }}{{ item.avatar }}" alt="{{ item.name }}" class="avatar is-small may-be-variable prefix is-wider">
+                        <div>
+                            <p>
+                                <span class="name">{{ item.name }}</span>
+                                <span class="loc">{{ item.location }}</span>
+                                <span class="date">{{ item.date | date: "%a, %b %d, %Y" }}</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+        <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+        <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+    </div>
+</section>

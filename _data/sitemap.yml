@@ -1,0 +1,57 @@
+sitemap:
+  - title: About CPC
+    subpages:
+      - page: About CPC
+        url: /about/
+      - page: Redress Mechanism
+        url: /consumers/complaints-handling/
+      - page: Departments
+        url: /departments/
+      - page: FAQs
+        url: /faqs/
+      - page: News & Events
+        url:  /news/
+      - page: CPC Media Gallery
+        url: /media/
+      - page: Downloads
+        url: /docs/
+      - page: Regulators
+        url: /regulators/
+      - page: Testimonials
+        url: /testimonials/
+  - title: For Consumers
+    subpages:
+      - page: Complaints Handling Procedures
+        url: /consumers/complaints-handling/
+      - page: Banned Imported Items
+        url: /consumers/banned-goods/
+      - page: Prohibited Items
+        url: /consumers/prohibited-goods/
+      - page: Consumer Blog
+        url: /consumer-blog/
+  - title: For Service Providers
+    subpages:
+      - page: Sales Promotion Guidelines
+        url: /service-providers/guidelines/
+      - page: Approved Sales Promotions
+        url: /docs/
+      - page: Sales Promotion Fees
+        url: /docs/
+      - page: Register a Sales Promotion
+        url: /docs/
+      - page: Penalty Table
+        url: /docs/
+      - page: Obligations & Guidelines
+        url: /service-providers/obligations/
+      - page: Approved NGOs List
+        url: /ngos/
+  - title: Contact CPC
+    subpages:
+      - page: Contact
+        url: /contact/
+      - page: File a Complaint
+        url: "http://user.cpc.softcom.ng/complain"
+        new_window: true
+      - page: Share a Testimonial
+        url: "http://user.cpc.softcom.ng/signin"
+        new_window: true

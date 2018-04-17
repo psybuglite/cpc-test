@@ -1,0 +1,33 @@
+---
+layout:     default
+---
+{% include breadcrumbs.html %}
+
+<section class="page-header-title">
+    <h1>How to...</h1>
+    <div class="big-bars">
+        <div class="green-bar"></div>
+        <div class="grey-bar"></div>
+    </div>
+</section>
+
+
+<section class="how-to-videos">
+  <div class="videos-area">
+    <h1>Videos</h1>
+    <div class="videos">
+        {% for post in site.posts %}
+        {% if post.category contains 'how-to' %}
+        <a href="{{ site.url }}{{ post.url }}">
+            <div class="video">
+                <div class="video-image">
+                    <img src="{{ site.url }}{{ post.image }}" alt="">
+                </div>
+                <p class="video-title">{{ post.name }}</p>
+            </div>
+        </a>
+        {% endif %}
+        {% endfor %}
+    </div>
+  </div>
+</section>

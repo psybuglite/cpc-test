@@ -1,0 +1,33 @@
+<footer class="site-footer">
+    <div class="sitemap grid is-multi-col mostly-4 boxed-width wrapper-x">
+        {% include sitemap.html %}
+    </div>
+    <div class="grid is-multi-col mostly-3 boxed-width wrapper-x pt-2">
+        <div class="bottom-footer">
+            {% include address.html %}
+            {% include follow-us.html %}
+        </div>
+        <div class="bottom-footer">
+            <h3 class="m-0 pb-h co-white microtext fw-normal">Consumer Newsletter</h3>
+            {% include newsletter-form.html %}
+        </div>
+        <div class="bottom-footer">
+            <h3 class="m-0 pb-h co-white microtext fw-normal">CPC App</h3>
+            {% include apps.html %}
+        </div>
+    </div>
+    <div class="grid boxed-width wrapper-x">
+        <p class="col-12 mb-0 nanotext colophon">
+            <span>This is the official website of the Consumer Protection Council (CPC)</span>
+        </p>
+        <p class="col-12 mb-0 nanotext w-link">
+            <a href="{{ site.url }}/copyright">Copyright</a>
+            <span>&copy; {{ 'now' | date: "%Y" }} Consumer Protection Council.</span>
+            <a href="{{ site.url }}/terms-of-use" class="prefix suffix">Terms of Use</a>&nbsp;&bull;&nbsp;
+            <a href="{{ site.url }}/privacy-policy" class="prefix suffix">Privacy Policy</a>&nbsp;&bull;&nbsp;
+            <a href="{{ site.url }}/sitemap" class="suffix">Site Map</a>
+        </p>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{{ site.url }}/js/flickity.pkgd.min.js"></script>

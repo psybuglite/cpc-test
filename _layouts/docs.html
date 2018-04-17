@@ -1,0 +1,24 @@
+---
+layout:     default
+---
+
+{% include breadcrumbs.html %}
+ 
+<section class="section">
+  <div class="with-left-nav">
+    <div class="right-content">
+      {% for download in site.downloads %}
+        <article class="post-content">
+          <h1>{{ download.title }}</h1>
+          <p>{{ download.desc }}</p>
+          <div class="doc-download">
+            <div class="doc-image">
+              <img src="../uploads/file.svg" alt="">
+            </div>
+            <a href="{{ site.url }}{{ download.file }}" download><i class="fa fa-cloud-download"></i>Download Form</a>
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

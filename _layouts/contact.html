@@ -1,0 +1,117 @@
+---
+layout:     default
+---
+
+{% include breadcrumbs.html %}
+
+<section class="page-header-title">
+    <h1>Contact Us</h1>
+    <div class="big-bars">
+        <div class="green-bar"></div>
+        <div class="grey-bar"></div>
+    </div>
+</section>
+
+<section class="contact-area">
+    <ul class="contact">
+        <li>
+            <h4>HEADQUARTERS</h4>
+            <hr>
+            <p>Address: 17 Nile Street, Maitama, Abuja, FCT</p>
+            <p>Phone: <a href="tel:0805 600 2020">Email: 0805 600 2020</a>, <a href="tel:0805 600 3030">Email: 0805 600 3030</a></p>
+            <p>Email: <a href="mailto:contact@cpc.gov.ng">contact@cpc.gov.ng</a></p>
+        </li>
+    </ul>
+</section>
+
+<section class="secondary-title">
+    <h1>Zonal Offices</h1>
+</section>
+
+<section class="contact-area">
+  <ul class="contact">
+    {% for location in site.locations %}
+      <li >
+            <h4>{{ location.name }} ({{ location.acronym }})</h4>
+            <hr>
+            <p><strong>Zonal officer: {{ location.officer }}</strong></>
+            <p>Address: {{ location.address }}</p>
+            <p>Contact: <a href="tel:{{ location.contact }}">{{ location.contact }}</a></p>
+            <p>Email: <a href="mailto:{{ location.email }}">{{ location.email }}</a></p>
+      </li> 
+    {% endfor %}
+    </ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
