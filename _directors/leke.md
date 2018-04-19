@@ -1,13 +1,14 @@
 ---
-title:           leke Ogundipe
-layout:          director
-name:            Mrs. Leke Ogundipe
-designation:     Director, Surveillance and Enforcement Department
-image:           /uploads/leke.jpg
-social-media:    none
-permalink:       /about/leke/
-rank:           2
+title: leke Ogundipe
+permalink: "/about/leke/"
+layout: director
+name: Mrs. Leke Ogundipe
+designation: Director, Surveillance and Enforcement Department
+image: "/uploads/leke.jpg"
+social-media: none
+rank: 2
 ---
+
 Mrs Leke Ogundipe is the Director and head of the Surveillance & Enforcement department. She graduated from the University of Ife in 1980 with a Bachelors degree in Law and was called to the Nigerian Bar in July 1981.
 
 Upon completion of the mandatory National Youth Service Corps scheme in 1982, she proceeded to the University of Lagos where she obtained a Masters degree in Law in 1983.

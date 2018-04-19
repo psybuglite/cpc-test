@@ -1,13 +1,14 @@
 ---
-title:           Kelechi Oko
-layout:          director
-name:            Mr. Kelechi Oko
-designation:     Deputy Director, Quality Assurance and Development
-image:           /uploads/oko.jpg
-social-media:    none
-permalink:       /about/oko/
-rank:           3
+title: Kelechi Oko
+permalink: "/about/oko/"
+layout: director
+name: Mr. Kelechi Oko
+designation: Deputy Director, Quality Assurance and Development
+image: "/uploads/oko.jpg"
+social-media: none
+rank: 3
 ---
+
 Mr. Kelechi Kenneth Oko is Deputy Director Quality Assurance and Development of the Consumer Protection Council.
 
 Born in Afikpo North Local Government Area of Ebonyi State, Mr. Oko obtained a BSc Degree in Chemistry from University of Nigeria Nsukka and a Post Graduate Diploma in Public Administration from the National Open University of Nigeria. He is also a Professional Member of the Institute of Chartered Chemists of Nigeria. He has served as a Tutorial and Laboratory Supervision Assistant in Bayero University Kano as a Youth Corp member. He has also worked as Technical Officer with GaekMoke &amp; Company Ltd, a Sales Representative (Professional) and a Special Projects Manager (Regulatory Affairs) with Patnasonic Industry Ltd.

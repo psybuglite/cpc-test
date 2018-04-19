@@ -1,163 +1,143 @@
-# Site settings
-title:          Consumer Protection Council
-shortname:      CPC
-company:        Consumer Protection Council
-description:    >-
-  Protecting and enhancing consumer's interest through information, education and enforcement of appropriate standards for goods and services.
-url:            'http://cpc.softcom.ng'
-charset:        'UTF-8'
-timezone:       Africa/Lagos
-
-
-# Headquarters
-headquarters:
-  title:    'Headquarters'
-  address:  '17 Nile Street, Maitama, Abuja, FCT'
-  phone:    '0805 600 2020, 0805 600 3030'
-  email:    'contact@cpc.gov.ng'
-
-
-# Social Media Handles
-social_media:
-  twitter:    cpcnig
-  facebook:   cpcng
-  instagram:  cpcnigeria
-
-
-# Included Plugins
-plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-paginate
-
-
-# Build settings
-markdown:       kramdown
-permalink:      pretty
-
-
-# Collections
+---
+title: Consumer Protection Council
+timezone: Africa/Lagos
 collections:
-  uploads:
-    title:  Uploads
-    output: true
-  testimonials:
-    title:  Testimonials
-    output: true
-  locations:
-    title:  Contact
-    output: true
-  directors:
-    title:  Directors
-    output: true
-  faqs:
-    title:  FAQs
-    output: true
-  departments:
-    title:  Departments
-    output: true
-  downloads:
-    title:  Downloads
-    output: true
   gallery:
-    title:  CPC Media Gallery
+    title: CPC Media Gallery
     output: true
-    permalink: /:collection/:name
+    permalink: "/:collection/:name"
   consumer_blog:
     title: Consumer Blog
     output: true
-  news:
-    title: News
+  locations:
+    title: Contact
+    output: true
+  departments:
+    title: Departments
+    output: true
+  directors:
+    title: Directors
+    output: true
+  downloads:
+    title: Downloads
+    output: true
+  faqs:
+    title: FAQs
     output: true
   how-to:
     title: How To
     output: true
-
-# Defaults
+  news:
+    title: News
+    output: true
+  posts:
+    title: Posts
+    output: true
+  testimonials:
+    title: Testimonials
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  - scope:
-      path: 'testimonials'
-      type: testimonials
-    values:
-      permalink: '/testimonials/'
-      layout: default
-  - scope:
-      path: 'directors'
-      type: directors
-    values:
-      permalink: '/directors/'
-      layout: director
-  - scope:
-      path: 'contact'
-      type: contact
-    values:
-      permalink: '/contact/'
-      layout: contact
-  - scope:
-      path: 'departments'
-      type: departments
-    values:
-      permalink: '/departments/'
-      layout: departments
-  - scope:
-      path: 'docs'
-      type: docs
-    values:
-      permalink: '/docs/'
-      layout: docs
-  - scope:
-      path: 'faqs'
-      type: faqs
-    values:
-      permalink: '/faqs/'
-      layout: faqs
-  - scope:
-      path: 'uploads'
-      type: uploads
-    values:
-      permalink: '/uploads/'
-      layout: uploads
-  - scope:
-      path: 'media'
-      type: media
-    values:
-      permalink: '/media/'
-      layout: media
-  - scope:
-      path: 'consumer-blog'
-      type: consumer-blog
-    values:
-      permalink: '/:collection/:name'
-      layout: post
-  - scope:
-      path: 'news'
-      type: news
-    values:
-      permalink: '/:collection/:name'
-      layout: post
-  - scope:
-      path: 'how-to'
-      type: how-to
-    values:
-      permalink: '/:collection/:name'
-      layout: post
-
-
-# Include
+- scope:
+    path: testimonials
+    type: testimonials
+  values:
+    permalink: "/testimonials/"
+    layout: default
+- scope:
+    path: directors
+    type: directors
+  values:
+    permalink: "/directors/"
+    layout: director
+- scope:
+    path: contact
+    type: contact
+  values:
+    permalink: "/contact/"
+    layout: contact
+- scope:
+    path: departments
+    type: departments
+  values:
+    permalink: "/departments/"
+    layout: departments
+- scope:
+    path: docs
+    type: docs
+  values:
+    permalink: "/docs/"
+    layout: docs
+- scope:
+    path: faqs
+    type: faqs
+  values:
+    permalink: "/faqs/"
+    layout: faqs
+- scope:
+    path: uploads
+    type: uploads
+  values:
+    permalink: "/uploads/"
+    layout: uploads
+- scope:
+    path: media
+    type: media
+  values:
+    permalink: "/media/"
+    layout: media
+- scope:
+    path: consumer-blog
+    type: consumer-blog
+  values:
+    permalink: "/:collection/:name"
+    layout: post
+- scope:
+    path: news
+    type: news
+  values:
+    permalink: "/:collection/:name"
+    layout: post
+- scope:
+    path: how-to
+    type: how-to
+  values:
+    permalink: "/:collection/:name"
+    layout: post
+shortname: CPC
+company: Consumer Protection Council
+description: Protecting and enhancing consumer's interest through information, education
+  and enforcement of appropriate standards for goods and services.
+url: http://cpc.softcom.ng
+charset: UTF-8
+headquarters:
+  title: Headquarters
+  address: 17 Nile Street, Maitama, Abuja, FCT
+  phone: '0805 600 2020, 0805 600 3030'
+  email: contact@cpc.gov.ng
+social_media:
+  twitter: cpcnig
+  facebook: cpcng
+  instagram: cpcnigeria
+plugins:
+- jekyll-sitemap
+- jekyll-seo-tag
+- jekyll-feed
+- jekyll-paginate
+markdown: kramdown
+permalink: pretty
 include:
-  - _pages
-
-
-# Exclude from processing.
+- _pages
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - package.json
-  - dev
-  - .gitignore
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+- package.json
+- dev
+- ".gitignore"

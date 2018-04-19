@@ -1,4 +1,5 @@
 ---
+permalink: "/regulators/"
 layout: regulators
-permalink: /regulators/
 ---
+
