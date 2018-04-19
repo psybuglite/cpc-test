@@ -217,12 +217,12 @@ var documents = [{
     "id": 10,
     "url": "http://cpc.softcom.ng/consumer-blog/",
     "title": "Consumer Blog",
-    "body": "{% include breadcrumbs. html %}  Consumer Blog                 {% for post in site. posts %}      {% if post. category contains 'consumer-blog' %}                                                                                     {{ post. title | truncate: 70 }}:                                          {{ post. content | truncatewords: 12 }}                     Read More {% include icons. html icon= arrow  %}                       {% endif %}     {% endfor %}      "
+    "body": "{% include breadcrumbs. html %}  Consumer Blog                  {% for post in site. categories. news limit: 2 %}                                                                                                    {{ post. title | truncate: 70 }}:                                                   {{ post. content | truncatewords: 12 }}                         Read More {% include icons. html icon= arrow  %}                        {% endfor %}      "
     }, {
     "id": 11,
     "url": "http://cpc.softcom.ng/how-to/",
     "title": "",
-    "body": "{% include breadcrumbs. html %}   How to. . .                Videos      {% for post in site. posts %}    {% if post. category contains 'how-to' %}                                            {{ post. name }}               {% endif %}    {% endfor %}   "
+    "body": "{% include breadcrumbs. html %}   How to. . .                Videos      {% for post in site. categories. how-to %}                                            {{ post. name }}               {% endfor %}   "
     }, {
     "id": 12,
     "url": "http://cpc.softcom.ng/consumers/",

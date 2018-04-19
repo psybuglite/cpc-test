@@ -1552,8 +1552,10 @@ svg {
 }
 
 .cpc-management .management .profile-cards .profile-card .profile-pic img {
+  height: 250px;
   width: 100%;
   border-radius: 5px;
+  object-fit: cover;
 }
 
 .cpc-management .management .profile-cards .profile-card .profile-name {
@@ -1668,6 +1670,19 @@ svg {
   }
   .cpc-management .management .profile-cards .profile-card .profile-name {
     margin: 10px 10px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .cpc-management .management .profile-cards .profile-card {
+    width: 200px;
+    margin: 20px 0px;
+  }
+  .cpc-management .management .profile-cards .profile-pic img {
+    height: 320px;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
   }
 }
 

@@ -1,25 +1,26 @@
 ---
-layout: default
+layout:     default
 ---
+
+
+
 
   <section class="slider-actions">
     <div class="slider col-md-8">
-      <ul class="about-carousel" data-flickity='{ "autoPlay": true, "contain": true, "prevNextButtons": true, "pageDots": false}'>
+      <ul class="about-carousel" data-flickity='{ "autoPlay": 4000, "contain": true, "prevNextButtons": true, "pageDots": false, "wrapAround": true}'>
         
-        {% assign sorted_posts = site.posts | where: 'category', 'consumer-blog' %}
-        {% for post in sorted_posts limit: 3 %}
-
+        
+        {% for post in site.categories.news limit: 2 %}
 
             <li class="carousel-cell">
                 <img src="{{ post.image }}">
                 <a href="{{ site.url }}{{ post.url }}" class="carous">
                   <div class="carousel-caption">
-                    <p class="caption">{{ post.content | truncatewords: 12 }}</p>
+                    <p class="caption">{{ post.title | truncatewords: 12 }}</p>
                   </div>
                 </a>
             </li>
 
- 
         {% endfor %}
       </ul>
     </div>
@@ -120,8 +121,7 @@ layout: default
             <a href="/consumer-blog/"><span class="prefix">View More</span> {% include icons.html icon="arrow" %}</a>
         </div>
         <ul class="index-blog-articles">
-                {% assign sorted_posts = site.posts | where: 'category', 'consumer-blog' %}
-                {% for post in sorted_posts limit: 2 %}
+            {% for post in site.categories.consumer-blog limit: 2 %}
               <li class="index-blog-article">
                   <div class="index-blog-image">
                     <a href="{{ site.url }}{{ post.url }}">
@@ -139,7 +139,7 @@ layout: default
                     <a href="{{ site.url }}{{ post.url }}"><span class="prefix">Read More</span>{% include icons.html icon="arrow" %}</a>
                   </div>
                 </li>
-          {% endfor %}
+            {% endfor %}
         </ul>
     </div>
   </seciton>

@@ -1,5 +1,4 @@
 ---
-permalink: "/contact/"
 layout: contact
+permalink: /contact/
 ---
-
