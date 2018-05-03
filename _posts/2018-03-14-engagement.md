@@ -1,10 +1,13 @@
 ---
+title: Strategic engagement with Directors, Business, and News Editors, tagged 'Partnership
+  for Protection'
+date: 2018-03-14 00:00:00 +01:00
+categories:
+- news
 layout: post
-title:   Strategic engagement with Directors, Business, and News Editors, tagged 'Partnership for Protection'
-date:    2018-03-14
-category: news
-image:   /uploads/strategic1.jpg
+image: "/uploads/strategic1.jpg"
 ---
+
 ![Strategic engagement with Directors]({{ site.url }}/uploads/strategic1.jpg)
 L-R: Director News, Federal Radio Corporation of Nigeria (FRCN), Sani Suleiman; Consumer Protection Council (CPC’s) Director General,BabatundeIrukera and Director, Consumer Education CPC, Mrs. Mopelola Akeju during the Council’s strategic engagement with Directors, Business, and News Editors, tagged “Partnership for Protection” in Lagos.
 

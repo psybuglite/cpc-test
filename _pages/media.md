@@ -1,4 +1,5 @@
 ---
-layout: media
 permalink: media
+layout: media
 ---
+

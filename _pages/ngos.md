@@ -1,4 +1,5 @@
 ---
+permalink: "/ngos/"
 layout: ngos
-permalink: /ngos/
 ---
+
