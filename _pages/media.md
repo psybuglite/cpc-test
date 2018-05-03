@@ -1,5 +1,4 @@
 ---
-permalink: media
 layout: media
+permalink: media
 ---
-

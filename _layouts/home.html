@@ -1,13 +1,15 @@
 ---
-layout: default
+layout:     default
 ---
+
+
+
 
   <section class="slider-actions">
     <div class="slider col-md-8">
       <ul class="about-carousel" data-flickity='{ "autoPlay": 4000, "contain": true, "prevNextButtons": true, "pageDots": false, "wrapAround": true}'>
         
-        
-        {% for post in site.categories.news limit: 2 %}
+        {% for post in site.categories.news limit: 3 %}
 
             <li class="carousel-cell">
                 <img src="{{ post.image }}">
@@ -95,20 +97,24 @@ layout: default
       <h1>Consumer testimonials</h1>
       <a href="/testimonials/"><span class="prefix">View More</span> {% include icons.html icon="arrow" %}</a>
     </div>
-    <ul class="about-carousel testimonials-slider" data-flickity='{ "autoPlay": true, "contain": true, "prevNextButtons": true, "pageDots": false, "wrapAround": true }'>
-      {% for testimony in site.testimonials %}
-        <li class="item carousel-cell">
-          <div class="testimonial-text">
-            <p>{{ testimony.testimonial }}</p>
-          </div>
-          <div class="consumer-info">
-            <div class="consumer-details">
-              <h4>{{ testimony.name }}</h4>
+    <div class="grid-2-cols container-area">
+        <ul class="about-carousel testimonials-slider" style="width:100%" data-flickity='{ "autoPlay": true, "contain": true, "prevNextButtons": true, "pageDots": false, "wrapAround": true }'>
+        {% for testimony in site.testimonials %}
+            <li class="item carousel-cell">
+            <div class="testimonial-text">
+                <p>{{ testimony.testimonial }}</p>
             </div>
-          </div>
-        </li>
-      {% endfor %}
-    </ul>
+            <div class="consumer-info">
+                <div class="consumer-details">
+                <h4>{{ testimony.name }}</h4>
+                </div>
+            </div>
+            </li>
+        {% endfor %}
+        </ul>
+        <iframe width="100%" height="300px" frameborder="0" src="https://www.youtube.com/embed/h3fQuIuMSO4">
+        </iframe>
+    </div>
   </div>
 
   <seciton class="from-consumer-blog">

@@ -1,7 +1,6 @@
 ---
-layout: default
+layout:     default
 ---
-
 {% include breadcrumbs.html %}
 
 <section class="page-header-title">
@@ -15,7 +14,7 @@ layout: default
 
 <section class="how-to-videos">
   <div class="videos-area">
-    <div class="videos">
+    <div class="grid-3-cols">
     {% for post in site.posts %}
     {% if post.category contains 'news' %}
       <a href="{{ site.url }}{{ post.url }}">
@@ -23,7 +22,7 @@ layout: default
           <div class="video-image">
             <img src="{{ site.url }}{{ post.image }}" alt="">
           </div>
-          <p class="video-title">{{ post.title }}</p>
+          <p class="video-title">{{ post.title | truncatewords: 17 }}</p>
         </div>
       </a>
     {% endif %}

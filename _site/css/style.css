@@ -84,6 +84,46 @@ ul.none {
   list-style: none;
 }
 
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 780px) {
+  .grid-3-cols {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-2-cols {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .grid-3-cols {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+}
+
+.container-area {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
 button {
   outline: none;
 }
@@ -127,6 +167,41 @@ input[type="email"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, i
 
 input[type="button"], input[type="submit"] {
   cursor: pointer;
+}
+
+button.flickity-button {
+  width: 30px;
+  outline: none;
+}
+
+button.flickity-button[type="button"] {
+  box-sizing: content-box;
+  border: 0;
+  background: #006535;
+  border-radius: 0;
+  color: inherit;
+  cursor: pointer;
+  overflow: visible;
+  padding: 0;
+  font: inherit;
+}
+
+button.flickity-button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.flickity-button {
+  background: #006535;
+  opacity: 0.7;
+}
+
+.flickity-button-icon {
+  fill: white;
+}
+
+.flickity-button:hover {
+  opacity: 1;
 }
 
 .site-wrapper {
@@ -1061,6 +1136,7 @@ svg {
   margin: 0px 0px 20px 0px;
   background: #FAFAFA;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .consumer-testimonials .consumer-top-title {
@@ -1076,7 +1152,6 @@ svg {
 }
 
 .consumer-testimonials .testimonials-slider {
-  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -1093,11 +1168,11 @@ svg {
 }
 
 .consumer-testimonials ul .item {
-  padding: 0px 100px;
+  width: 100%;
+  padding: 0px 10px;
 }
 
 .consumer-testimonials ul .testimonial-text {
-  max-width: 600px;
   margin: 0 auto;
   border-radius: 4px;
   border: 0.5px solid #efefef;
@@ -1107,29 +1182,17 @@ svg {
 }
 
 .consumer-testimonials ul .consumer-info {
-  max-width: 600px;
-  margin: 20px auto;
+  margin: 10px auto;
   display: flex;
   justify-content: center;
 }
 
-.consumer-testimonials ul .consumer-info .consumer-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-
-.consumer-testimonials ul .consumer-info .consumer-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid white;
-}
-
 .consumer-testimonials ul .consumer-info .consumer-details h4 {
   color: #006535;
+}
+
+.consumer-testimonials ul .flickity-button {
+  transform: translateY(40px);
 }
 
 .from-consumer-blog .from-consumer-blog-content {
@@ -2279,7 +2342,16 @@ svg {
   font-weight: bold;
 }
 
-.contact-area ul {
+.contact-area a, .contact-area p {
+  font-size: 17px;
+  line-height: 17px;
+}
+
+.contact-area a {
+  margin-bottom: 5px;
+}
+
+.secondary-contact-area ul {
   padding: 0 15px;
   margin: 30px auto;
   list-style: none;
@@ -2288,20 +2360,45 @@ svg {
   flex-wrap: wrap;
 }
 
-.contact-area ul li {
+.secondary-contact-area ul li {
   border-left: 2px solid #006535;
   padding-left: 30px;
   width: 45%;
   margin: 0px 20px 50px 0px;
 }
 
-.contact-area ul li a, .contact-area ul li p {
+.secondary-contact-area ul li a, .secondary-contact-area ul li p {
   font-size: 17px;
   line-height: 17px;
 }
 
-.contact-area ul li a {
+.secondary-contact-area ul li a {
   margin-bottom: 5px;
+}
+
+.pdbottom {
+  padding-bottom: 70px;
+}
+
+.pdbottom ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.contact-part {
+  padding-bottom: 30px;
+}
+
+.contact-part .container-area ul {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.contact-part .container-area h4 {
+  margin-top: 0;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 500px) {

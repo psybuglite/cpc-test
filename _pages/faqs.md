@@ -1,5 +1,4 @@
 ---
-permalink: "/faqs/"
 layout: faqs
+permalink: /faqs/
 ---
-

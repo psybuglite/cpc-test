@@ -1,10 +1,9 @@
 ---
-title: Quality assurance
-permalink: "/departments/quality-assurance/"
-layout: units
-department: Quality Assurance and Development Department (QAD)
+title:           Quality assurance
+layout:          units
+department:      Quality Assurance and Development Department (QAD)
+permalink:       /departments/quality-assurance/
 ---
-
 The Quality Assurance and Development Department is responsible for assessing and monitoring product and service standard quality. This being a diverse mandate, considering the Council oversees all products and services; the QAD operates both from a life and material sciences standpoint, as well as technical standards. For the life science operations, QAD manages a Council testing laboratory and interfaces with other organizations with testing laboratories for tests the Council cannot conduct. QAD works closely with S &amp; E in its monitoring activities by providing the inspections expertise and spot product testing component of surveillance and monitoring.
 
 QAD is the Council’s direct and functional interface with other regulators with respect to setting and reviewing prevailing standards. The department engages industry and assists with developing acceptable Operational Manuals and Standard Operating Procedures.

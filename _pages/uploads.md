@@ -1,5 +1,4 @@
 ---
-permalink: "/uploads/"
 layout: oops
+permalink: /uploads/
 ---
-

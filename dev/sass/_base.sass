@@ -64,7 +64,31 @@ ul.none
     padding-left:               0
     list-style:                 none
 
-
+.grid-2-cols
+    display:                    grid
+    grid-template-columns:      1fr 1fr
+    grid-gap:                   20px
+.grid-3-cols
+    display:                    grid
+    grid-template-columns:      1fr 1fr 1fr
+    grid-gap:                   20px
+@media screen and (max-width: 780px)
+    .grid-3-cols
+        grid-template-columns:      1fr 1fr
+        grid-gap:                   20px
+@media screen and (max-width: 600px)
+    .grid-2-cols
+        display:                    grid
+        grid-template-columns:      1fr
+        grid-gap:                   10px
+@media screen and (max-width: 450px)
+    .grid-3-cols
+        grid-template-columns:      1fr
+        grid-gap:                   10px
+.container-area
+    max-width:                  1024px
+    margin:                     0 auto
+    padding:                    0px 15px
 
 // Buttons, Inputs, 
 button
@@ -107,4 +131,26 @@ input
     &[type="submit"]
         cursor:                 pointer
 
-
+button.flickity-button
+    width:                      30px
+    outline:                    none
+    &[type="button"]
+        box-sizing:             content-box
+        border:                 0
+        background:             $primarycolor
+        border-radius:          0
+        color:                  inherit
+        cursor:                 pointer
+        overflow:               visible
+        padding:                0
+        font:                   inherit
+    &::-moz-focus-inner
+        border:                 0
+        padding:                0
+.flickity-button
+    background: $primarycolor
+    opacity: 0.7
+.flickity-button-icon
+    fill: white
+.flickity-button:hover
+    opacity: 1
