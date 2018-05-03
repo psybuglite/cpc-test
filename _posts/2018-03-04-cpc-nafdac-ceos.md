@@ -1,6 +1,7 @@
 ---
-title: CPC, NAFDAC CEOs discuss collaboration against counterfeiting and adulteration of food and drugs
-date: 2018-03-04 00:00:00 +01:00
+title: CPC, NAFDAC CEOs discuss collaboration against counterfeiting and adulteration
+  of food and drugs
+date: 2018-03-03 12:00:00 -11:00
 categories:
 - consumer-blog
 layout: post
