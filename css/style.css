@@ -2082,19 +2082,6 @@ svg {
   width: 100%;
 }
 
-.how-to-videos .videos-area .video .video-image svg {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.how-to-videos .videos-area .video .video-image svg circle {
-  fill: #006535;
-}
-
 .how-to-videos .videos-area .video .video-image p {
   margin-top: 20px;
   font-size: 17px;
@@ -2109,6 +2096,16 @@ svg {
 
 .post-area .post-content img {
   margin-bottom: 50px;
+}
+
+.center-position {
+  left: 50%;
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (max-width: 1000px) {
