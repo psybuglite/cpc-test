@@ -4,18 +4,22 @@
     max-width: 1024px
     padding: 20px 15px 20px 15px
     margin: 0 auto
-    .videos
-      display: flex
-      flex-wrap: wrap
-      .video
-        width: 250px
-        margin: 20px 4px
+    .video
+      .video-image
         img
-          width: 100%
+            width: 100%
+        svg
+            width: 40px
+            height: 40px
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            circle
+                fill: $primarycolor
         p
           margin-top: 20px
           font-size: 17px
-
 .post-area
   .post-content
     max-width: 1024px

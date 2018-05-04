@@ -1,7 +1,7 @@
 sitemap:
   - title: About CPC
     subpages:
-      - page: About CPC
+      - page: About Us
         url: /about/
       - page: Redress Mechanism
         url: /consumers/complaints-handling/
@@ -9,7 +9,7 @@ sitemap:
         url: /departments/
       - page: FAQs
         url: /faqs/
-      - page: News & Events
+      - page: News
         url:  /news/
       - page: CPC Media Gallery
         url: /media/
@@ -23,16 +23,16 @@ sitemap:
     subpages:
       - page: Complaints Handling Procedures
         url: /consumers/complaints-handling/
-      - page: Banned Imported Items
+      - page: Banned Imported Products
         url: /consumers/banned-goods/
-      - page: Prohibited Items
+      - page: Prohibited Products
         url: /consumers/prohibited-goods/
       - page: Consumer Blog
         url: /consumer-blog/
-  - title: For Service Providers
+  - title: For Businesses
     subpages:
       - page: Sales Promotion Guidelines
-        url: /service-providers/guidelines/
+        url: /businesses/guidelines/
       - page: Approved Sales Promotions
         url: /docs/
       - page: Sales Promotion Fees
@@ -42,7 +42,7 @@ sitemap:
       - page: Penalty Table
         url: /docs/
       - page: Obligations & Guidelines
-        url: /service-providers/obligations/
+        url: /businesses/obligations/
       - page: Approved NGOs List
         url: /ngos/
   - title: Contact CPC

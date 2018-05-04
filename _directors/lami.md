@@ -3,7 +3,7 @@ title: Lami B. Daikwo
 permalink: "/about/lami/"
 layout: director
 name: Lami B. Daikwo
-designation: Head of Procurement Unit
+designation: Head, Procurement
 image: "/uploads/lami.jpg"
 social-media: none
 rank: 4

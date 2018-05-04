@@ -3,7 +3,7 @@ title: Edache Abu
 permalink: "/about/abu/"
 layout: director
 name: Edache Abu
-designation: Head Internal Audit Unit
+designation: Head, Internal Audit
 image: "/uploads/abu.jpg"
 social-media: none
 rank: 4

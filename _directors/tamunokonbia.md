@@ -3,7 +3,7 @@ title: Tam Tamunokonbia
 permalink: "/about/tamunokonbia/"
 layout: director
 name: Tam Tamunokonbia
-designation: Deputy Director, Legal Services Department
+designation: Head, Legal Services
 image: "/uploads/tamunokonbia.jpg"
 social-media: none
 rank: 3

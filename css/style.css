@@ -2078,21 +2078,24 @@ svg {
   margin: 0 auto;
 }
 
-.how-to-videos .videos-area .videos {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.how-to-videos .videos-area .videos .video {
-  width: 250px;
-  margin: 20px 4px;
-}
-
-.how-to-videos .videos-area .videos .video img {
+.how-to-videos .videos-area .video .video-image img {
   width: 100%;
 }
 
-.how-to-videos .videos-area .videos .video p {
+.how-to-videos .videos-area .video .video-image svg {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.how-to-videos .videos-area .video .video-image svg circle {
+  fill: #006535;
+}
+
+.how-to-videos .videos-area .video .video-image p {
   margin-top: 20px;
   font-size: 17px;
 }
@@ -2146,6 +2149,15 @@ svg {
 
 .section .management-section .management-image {
   padding-top: 20px;
+  text-align: center;
+}
+
+.section .management-section .management-image h1 {
+  margin-bottom: 0px;
+}
+
+.section .management-section .management-image h4 {
+  margin-top: 5px;
 }
 
 .section .management-section .management-image img {
@@ -2553,47 +2565,8 @@ svg {
   }
 }
 
-.media ul {
-  max-width: 1024px;
-  margin: 30px auto;
-  padding: 0 15px;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.media ul li {
-  width: 230px;
-  margin: 5px 5px;
-  height: 200px;
-}
-
-.media ul li img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-@media screen and (max-width: 600px) {
-  .media ul {
-    max-width: 1024px;
-    margin: 30px auto;
-    padding: 0 15px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .media ul li {
-    width: 230px;
-    margin: 5px 5px;
-    height: 200px;
-  }
-  .media ul li img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.media {
+  padding: 30px 0px;
 }
 
 .width-100-pc {

@@ -1,7 +1,7 @@
 cpc:
   - title: About CPC
     subpages:
-      - page: About CPC
+      - page: About Us
         url: /about
       - page: Redress Mechanism
         url: /consumers/complaints-handling

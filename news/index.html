@@ -16,8 +16,8 @@ layout: default
 <section class="how-to-videos">
   <div class="videos-area">
     <div class="grid-3-cols">
-    {% for post in site.posts %}
-    {% if post.category contains 'news' %}
+    {% for post in site.categories.news %}
+
       <a href="{{ site.url }}{{ post.url }}">
         <div class="video">
           <div class="video-image">
@@ -26,7 +26,7 @@ layout: default
           <p class="video-title">{{ post.title | truncatewords: 17 }}</p>
         </div>
       </a>
-    {% endif %}
+
     {% endfor %}
     </div>
   </div>

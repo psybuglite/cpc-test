@@ -16,10 +16,9 @@ layout: default
   <ul class="ul">
     <a href="/consumers/rights"><li>Rights</li></a>
     <a href="/consumers/responsibilities"><li>Responsibilities</li></a>
-    <a href="/consumers/post-cards"><li>Services</li></a>
     <a href="/consumers/complaints-handling"><li>Complaints Handling</li></a>
     <a href="/consumers/banned-goods"><li>Banned Goods</li></a>
-    <a href="/consumers/prohibited-goods"><li>Prohibited Goods</li></a>
+    <a href="/consumers/prohibited-goods"><li>Absolutely Prohibited Goods</li></a>
   </ul>
 </nav>
 
@@ -30,8 +29,7 @@ layout: default
         <a href="/consumer-blog">View More {% include icons.html icon="arrow" %}</a>
     </div>
     <ul class="index-blog-articles">
-            {% assign sorted_posts = site.posts | where: 'category', 'consumer-blog' %}
-            {% for post in sorted_posts limit: 2 %}
+            {% for post in site.categories.consumer-blog limit: 2 %}
             <li class="index-blog-article">
               
               <div class="index-blog-image">
