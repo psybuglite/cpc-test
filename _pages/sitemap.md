@@ -1,5 +1,6 @@
 ---
-permalink: "/sitemap/"
-layout: sitemap
+title: Sitemap
+permalink: /sitemap/
+layout: page
+grid: true
 ---
-

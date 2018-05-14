@@ -1,5 +1,0 @@
----
-permalink: media
-layout: media
----
-

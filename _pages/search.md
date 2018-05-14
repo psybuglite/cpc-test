@@ -1,5 +1,4 @@
 ---
-permalink: "/search"
+permalink: /search/
 layout: search
 ---
-

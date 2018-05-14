@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="maxwidth-sl mx-auto clearfix">
+    <section class="left-70 wrapper">
+        <div>
+            <h3>{{ page.title }}</h3>
+        </div>
+        {% if page.image %}
+            <img src="{{ page.image }}" alt="" class="featured-image">
+        {% endif %}
+        <div class="py-h smalltext co-primary">
+            Posted: {{ page.date | date: "%A, %B %d, %Y" }}
+        </div>
+
+        <div class="py-2">
+            {{ content }}
+        </div>
+                
+    </section>
+    <aside class="right-30 sidebar wrapper">
+        {% include components/sidebar.html %}
+    </aside>
+</div>
+<div class="maxwidth-sl mx-auto clearfix">
+    <section class="wrapper">
+        <h4><a href="{{ page.document | prepend: site.url }}" download>Download as an image</a></h4>
+    </section>
+</div>

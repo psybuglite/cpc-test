@@ -1,0 +1,34 @@
+---
+layout: default
+---
+<section class="maxwidth-sl mx-auto">
+    <div class="wrapper top-heading">
+        {% include lists/breadcrumbs.html %}
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.summary }}</p>
+    </div>
+</section>
+<section class="maxwidth-sl mx-auto pb-1">
+    <div class="wrapper">
+        <ul class="none">
+        {% if page.document == "ngos" %}
+            {% assign ngos = site.documents | where: "document", "ngos" %}
+            {% for document in ngos %}
+                <li>
+                    <h3>{{ document.title }}</h3>
+                    <a href="{{ document.file | prepend: site.url }}" download>Download file</a>
+                </li>
+            {% endfor %}
+        {% else %}
+            {% assign businesses = site.documents | where: "document", "businesses" %}
+            {% for document in businesses %}
+                <li>
+                    <h3>{{ document.title }}</h3>
+                    <a href="{{ document.file | prepend: site.url }}" download>Download file</a>
+                </li>
+            {% endfor %}
+        {% endif %}
+    </ul>
+    </div>
+    
+</section>

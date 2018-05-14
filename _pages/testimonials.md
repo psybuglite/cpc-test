@@ -1,5 +1,0 @@
----
-permalink: "/testimonials/"
-layout: testimonials
----
-

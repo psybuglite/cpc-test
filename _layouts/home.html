@@ -1,161 +1,107 @@
 ---
 layout: default
 ---
-
-  <section class="slider-actions">
-    <div class="slider col-md-8">
-      <ul class="about-carousel" data-flickity='{ "autoPlay": 4000, "contain": true, "prevNextButtons": true, "pageDots": false, "wrapAround": true}'>
-        
-        {% for post in site.categories.news limit: 3 %}
-
-            <li class="carousel-cell">
-                <img src="{{ post.image }}">
-                <a href="{{ site.url }}{{ post.url }}" class="carous">
-                  <div class="carousel-caption">
-                    <p class="caption">{{ post.title | truncatewords: 12 }}</p>
-                  </div>
-                </a>
-            </li>
-
-        {% endfor %}
-      </ul>
-    </div>
-    <div class="actions col-md-4">
-      <a href="http://user.cpc.softcom.ng/complain" target="_blank">
-        <div class="action">
-          <div class="action-image">
-            <img src="../uploads/red.svg" alt="">
-          </div>
-          <div class="action-text">
-            <h4>File Complaint</h4>
-            <p>Filing a complaint will help CPC to really serve you better.</p>
-          </div>
-        </div>
-      </a>
-      <a href="http://user.cpc.softcom.ng/signin" target="_blank">
-        <div class="action">
-          <div class="action-image">
-            <img src="../uploads/blue.svg" alt="">
-          </div>
-          <div class="action-text">
-            <h4>Leave a Review</h4>
-            <p>Your reviews can help businesses know how they are performing.</p>
-          </div>
-        </div>
-      </a>
-      <a href="http://user.cpc.softcom.ng/signin" target="_blank">
-        <div class="action">
-          <div class="action-image">
-            <img src="../uploads/amber.svg" alt="">
-          </div>
-          <div class="action-text">
-            <h4>Track Complaint</h4>
-            <p>Keep track of your complaints and account with CPC.</p>
-          </div>
-        </div>
-      </a>
-      <a href="/consumers/">
-        <div class="action">
-          <div class="action-image">
-            <img src="../uploads/lightgreen.svg" alt="">
-          </div>
-          <div class="action-text">
-            <h4>Know Your Rights</h4>
-            <p>Know your rights and responsibilities as a consumer.</p>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <section class="cpc-stats">
-    <div class="stats">
-      <div class="stat all-stat">
-        <p class="date"></p>
-        <p class="cpc-name">Consumer Protection Council</p>
-      </div>
-      <div class="stat mid-stat1">
-        <h2>12.9M+</h2>
-        <p>ALL CASES</p>
-      </div>
-      <div class="stat mid-stat2">
-        <h2>2.8M+</h2>
-        <p>OPEN CASES</p>
-      </div>
-      <div class="last-stat stat">
-        <h2>9.1M+</h2>
-        <p>RESOLVED CASES</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="consumer-testimonials">
-    <div class="consumer-top-title">
-      <h1>Consumer testimonials</h1>
-      <a href="/testimonials/"><span class="prefix">View More</span> {% include icons.html icon="arrow" %}</a>
-    </div>
-    <div class="grid-2-cols container-area">
-        <ul class="about-carousel testimonials-slider" style="width:100%" data-flickity='{ "autoPlay": true, "contain": true, "prevNextButtons": true, "pageDots": false, "wrapAround": true }'>
-        {% for testimony in site.testimonials %}
-            <li class="item carousel-cell">
-            <div class="testimonial-text">
-                <p>{{ testimony.testimonial }}</p>
-            </div>
-            <div class="consumer-info">
-                <div class="consumer-details">
-                <h4>{{ testimony.name }}</h4>
-                </div>
-            </div>
-            </li>
+<div class="maxwidth-sl mx-auto clearfix">
+    <section class="left-70 wrapper">
+        <ul class="carousel first-carousel none" data-flickity='{ "autoPlay": 6000, "adaptiveHeight": true, "contain": true, "prevNextButtons": true, "pageDots": false, "wrapAround": true}'>
+            {% assign sorted = site.releases | where_exp: "page", "page.image contains 'uploads'" %}
+            {% for post in sorted limit: 6 %}
+                <li class="carousel-cell">
+                    {% if post.image %}
+                    <img src="{{ post.image }}">
+                    {% else %}
+                    <img src="{{ site.url }}/uploads/logo.jpg">
+                    {% endif %}
+                    <a href="{{ site.url }}{{ post.url }}" class="carous">
+                    <div class="carousel-caption py-1 pos-abs">
+                        <p class="caption">{{ post.title | truncatewords: 12 }}</p>
+                    </div>
+                    </a>
+                </li>
         {% endfor %}
         </ul>
-        <iframe width="100%" height="300px" frameborder="0" src="https://www.youtube.com/embed/h3fQuIuMSO4">
-        </iframe>
-    </div>
-  </div>
+    </section>
+    <aside class="right-30 sidebar wrapper">
+        {% for item in site.actions %}
+            <div class="take-action">
+                <h3 class="m-0 pb-h">{{ item.title }}</h3>
+                <ul class="none">
+                    {% for entry in item.subpages %}
+                    <li>
+                        <a href="">
+                            <div class="p-1 boxshadow d-flx mb-h a-i-c">
+                                {% case entry.name %}
+                                    {% when 'File a Complaint' %}
+                                        {% include tools/icons.html icon="file-complaint" %}
+                                    {% when 'Leave a Review' %}
+                                        {% include tools/icons.html icon="review" %}
+                                    {% when 'Know your rights' %}
+                                        {% include tools/icons.html icon="track-complaint" %}
+                                    {% when 'Track a Complaint' %}
+                                        {% include tools/icons.html icon="rights" %}
+                                {% endcase %}
+                                <div>
+                                    <p class="nanotext mb-hh mt-0"><strong>{{ entry.name }}</strong></p>
+                                    <p class="nanotext co-readablegray smalllh m-0">{{ entry.text }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                {% endfor %}
+                </ul>
+            </div>
+        {% endfor %}
+    </aside>
+</div>
 
-  <seciton class="from-consumer-blog">
-    <div class="from-consumer-blog-content">
-        <div class="from-consumer-blog-title">
-            <h2>From the Consumer Blog</h2>
-            <a href="/consumer-blog/"><span class="prefix">View More</span> {% include icons.html icon="arrow" %}</a>
-        </div>
-        <ul class="index-blog-articles">
-            {% for post in site.categories.consumer-blog limit: 2 %}
-              <li class="index-blog-article">
-                  <div class="index-blog-image">
-                    <a href="{{ site.url }}{{ post.url }}">
-                      <img src="{{ post.image }}" alt="">
-                    </a>
-                  </div>
-                  <div class="index-blog-snippet">
-                    <a href="{{ site.url }}{{ post.url }}">
-                    <h3 class="post-title"><a href="{{ site.url }}{{ post.url }}">{{ post.title | truncatewords: 8 }}</a></h3>
-                    </a>
-                    <div class="thin-bar"></div>
-                    <p class="blog-post-snippet">
-                      {{ post.content | truncatewords: 12 }}
-                    </p>
-                    <a href="{{ site.url }}{{ post.url }}"><span class="prefix">Read More</span>{% include icons.html icon="arrow" %}</a>
-                  </div>
+
+{% include components/stats.html %}
+
+
+<section class="maxwidth-sl mx-auto">
+    <div class="wrapper grid is-multi-col mostly-2">
+        <ul class="carousel none" data-flickity='{ "autoPlay": 4000, "contain": true, "prevNextButtons": true, "pageDots": false, "wrapAround": true}'>
+            {% for item in site.testimonials %}
+                <li class="carousel-cell p-2 d-flx fd-c j-c-c tx-c">
+                    <p>{{ item.text }}</p>
+                    <h4>{{ item.name }}</h4>
                 </li>
             {% endfor %}
         </ul>
+        {% assign sorted = site.how-tos | where: "featured", "true" %}
+        {% for item in sorted %}
+            <iframe width="100%" src="{{ item.link }}" frameborder="0">
+            </iframe>
+        {% endfor %}
     </div>
-  </seciton>
+</section>
 
-
-  <script>
-  
-  var now = new Date();
-  var options = {
-      year: 'numeric',
-      month: 'long'
-  };
-
-  var date = now.toLocaleString('en-us', options);
-  var cpcDate = document.querySelector(".date");
-
-  cpcDate.innerHTML = date;
-
-  </script>
+<section class="maxwidth-sl mx-auto">
+    <div class="wrapper">
+        <div class="d-flx al-i-c mb-2">
+            <h3 class="m-0 prefix is-even-wider">Consumer Blog</h3>
+            <span class="suffix nanotext prefix">View More {% include tools/icons.html icon="chevron-right" %}</span>
+        </div>
+        <div class="grid is-multi-col mostly-2">
+                {% assign sorted = site.blog | where_exp: "page", "page.image contains 'uploads'" %}
+                {% for post in sorted limit: 2 %}
+            <a href="{{ post.url | prepend: site.url }}">
+                <div class="d-flx fw-w">
+                    {% if post.image %}
+                    <img src="{{ post.image | prepend: site.url }}" class="left-50-persisted prefix is-wider blog-image" alt="">
+                    {% else %}
+                    <img src="{{ site.url }}/uploads/logo.jpg">
+                    {% endif %}
+                        <div class="microtext smalllh co-readablegray">
+                            <h3 class="m-0 smalltext">{{ post.title | truncatewords: 8 }}</h3>
+                            <p>
+                                {{ post.content | truncatewords: 20 }}
+                            </p>
+                            <span class="prefix microtext co-primary">Read More {% include tools/icons.html icon="chevron-right" %}</span>
+                        </div>
+                    </div>
+                    </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

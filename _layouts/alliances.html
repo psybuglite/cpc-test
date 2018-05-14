@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<section class="maxwidth-sl mx-auto">
+    <div class="wrapper">
+        {% include lists/breadcrumbs.html %}
+        <h2>{{ page.title }}</h2>
+        <p>{{ page.summary }}</p>
+    </div>
+    
+</section>
+
+<section class="maxwidth-sl mx-auto sub-container">
+    <div class="wrapper">
+        <h3>Regulators</h3>
+        <ul class="none">
+            {% for regulator in site.regulators %}
+            <li>
+                    <h4>{{ regulator.title }}</h4>
+                    <p>{{ regulator.details }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+        <br>
+        <h3>International and Regional Development Partners</h3>
+        <ul class="none">
+            {% for partner in site.partners %}
+            <li>
+                <h4>{{ partner.title }}</h4>
+                <p>{{ partner.details }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

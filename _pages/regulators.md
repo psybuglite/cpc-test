@@ -1,5 +1,0 @@
----
-permalink: "/regulators/"
-layout: regulators
----
-

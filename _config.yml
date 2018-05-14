@@ -1,146 +1,302 @@
----
+# Site settings
 title: Consumer Protection Council
-timezone: Pacific/Pago_Pago
+shortname: cpc
+legal_tag: The Council
+description: CPC is the apex consumer protection agency in Nigeria established to improve the well-being of the people.
+url: 'http://cpc.softcom.ng/'
+timezone: Africa/Lagos
+
+
+# Handling Reading
+charset: 'utf-8'
+pagination:
+  enabled: true
+  permalink: '/:num/'
+  title: ':title - :num'
+
+
+# Main navigation
+mainnav:
+  - section: Home
+    url: /
+  - section: About
+    url: /about/
+    pages:
+      - page: The Council
+        url: /about/council/
+      - page: What We Do
+        url: /about/what-we-do/
+      - page: Strategic Goals
+        url: /about/strategic-goals/
+      - page: Departments & Units
+        url: /about/departments/
+      - page: People
+        url: /about/people/
+      - page: Strategic Alliances
+        url: /about/alliances/
+      - page: FAQs
+        url: /faqs/
+      - page: Contact
+        url: /contact/
+  - section: For Consumers
+    url: /consumers/
+    pages:
+      - page: Consumer Rights
+        url: /consumers/rights/
+      - page: Consumer Responsibilities
+        url: /consumers/responsibilities/
+      - page: Complaints Handling Procedures
+        url: /consumers/complaints-handling-procedures/
+      - page: Import Prohibition List
+        url: /consumers/import-prohibition-list
+      - page: Absolutely Prohibited Product List
+        url: /consumers/absolutely-prohibited-list/
+      - page: Testimonials
+        url: /consumers/testimonials/
+      - page: Consumer Blog
+        url: /blog/
+  - section: For Businesses
+    url: /businesses/
+    pages:
+      - page: Business Obligations
+        url: /businesses/obligations/
+      - page: Sales Promotion Guidelines
+        url: /businesses/sales-promotion-guidelines/
+      - page: Relevant Documents
+        url: /businesses/documents/
+  - section: NGOs
+    url: /ngos/
+    pages:
+      - page: General Guidelines
+        url: /ngos/guidelines/
+      - page: Relevant Documents
+        url: /ngos/documents/
+  - section: Publications
+    url: /publications/
+    pages:
+      - page: Annual Reports
+        url: /publications/annual-reports/
+      - page: Consumer Education Materials
+        url: /publications/materials/
+      - page: Others
+        url: /publications/more
+  - section: News & Events
+    url: /news-events/
+    pages:
+      - page: Releases
+        url: /news-events/releases/
+      - page: Announcements
+        url: /news-events/announcements/
+      - page: Alert/Advisory
+        url: /news-events/alerts/
+      - page: Events
+        url: /news-events/events/
+      - page: Gallery
+        url: /gallery/
+  - section: How to...
+    url: /how-tos/
+  - section: Search
+    url: /search/
+
+
+# Actions
+actions:
+  - title:  Take Action
+    subpages:
+      - name: File a Complaint
+        link: /
+        text: Filing a complaint will help CPC to serve you better.
+      - name: Leave a Review
+        link: /
+        text: Your reviews can help businesses know how they are performing.
+      - name: Track a Complaint
+        link: /
+        text: Keep track of your complaints and account with CPC.
+      - name: Know your rights
+        link: /consumers/rights
+        text: Know your rights and responsibilities as a consumer.
+
+
+# Social media
+social_media:
+  - title:  Social
+    subpages:
+      - name: Facebook 
+        link: cpcng
+      - name: Twitter
+        link: cpcnig
+      - name: Instagram
+        link: cpcnigeria
+
+# Social media
+apps:
+  - title:  Apps
+    subpages:
+      - name: Android 
+        link: /
+      - name: iOS
+        link: /
+
+
+# Legal
+legal:
+  - title:  Legal
+    subpages:
+      - name: Terms of Use
+        url: /terms-of-use/
+      - name: Privacy Policy
+        url: /privacy-policy/
+      - name: Sitemap
+        url: /sitemap/
+
+
+# Headquarters
+headquarters:
+  title:    Headquarters
+  address:  17 Nile Street, Maitama, <br /> Abuja, FCT, Nigeria.
+  phone:    0805 600 2020, 0805 600 3030
+  email:    'contact@cpc.gov.ng'
+  contact_url:   /contact/
+
+
+# Build settings
+markdown: kramdown
+
+
+# Collections
 collections:
+  uploads:
+    title:  Uploads (Media & Files)
+    output: true
+  people:
+    title: Our People
+    output: true
+    permalink: /about/:collection/:name/
+  how-tos:
+    title: How-Tos
+    output: true
+    permalink: /how-tos/:collection/:name/
+  releases:
+    title: Releases
+    output: true
+  blog:
+    title: Consumer Blog
+    output: true
+  announcements:
+    title: Announcements
+    output: true
+  alerts:
+    title: Alerts & Advisory
+    output: true
+  events:
+    title: Events
+    output: true
   gallery:
     title: CPC Media Gallery
     output: true
-    permalink: "/:collection/:name"
-  consumer_blog:
-    title: Consumer Blog
-    output: true
-    permalink: "/:collection/:name"
-  locations:
-    title: Contact
-    output: true
   departments:
-    title: Departments
+    title: Departments and Units
     output: true
-  directors:
-    title: Directors
+    permalink: /about/departments/:collection/:name/
+  regulators:
+    title: Regulators
     output: true
-  downloads:
-    title: Downloads
+    permalink: /about/regulators/:collection/:name/
+  partners:
+    title: Partners
     output: true
-  faqs:
-    title: FAQs
+    permalink: /about/partners/:collection/:name/
+  consumers:
+    title: Consumers
     output: true
-  how-to:
-    title: How To
-    output: true
-    permalink: "/:collection/:name"
-  news:
-    title: News
-    output: true
-    permalink: "/:collection/:name"
-  posts:
-    title: Posts
-    output: true
+    permalink: /consumers/:collection/:name/
   testimonials:
     title: Testimonials
     output: true
-  uploads:
-    title: Uploads
+    permalink: /consumers/testimonials/:collection/:name/
+  businesses:
+    title: Businesses
     output: true
+    permalink: /businesses/:collection/:name/
+  ngos:
+    title: Non-Governmental Organisations (NGOs)
+    output: true
+    permalink: /ngos/:collection/:name/
+  documents:
+    title: Relevant Documents
+    output: true
+    permalink: /ngos/:collection/:name/
+  publications:
+    title: Publications
+    output: true
+    permalink: /publications/:collection/:name/
+
+
+# Defaults
 defaults:
-- scope:
-    path: testimonials
-    type: testimonials
-  values:
-    permalink: "/testimonials/"
-    layout: default
-- scope:
-    path: directors
-    type: directors
-  values:
-    permalink: "/directors/"
-    layout: director
-- scope:
-    path: contact
-    type: contact
-  values:
-    permalink: "/contact/"
-    layout: contact
-- scope:
-    path: departments
-    type: departments
-  values:
-    permalink: "/departments/"
-    layout: departments
-- scope:
-    path: docs
-    type: docs
-  values:
-    permalink: "/docs/"
-    layout: docs
-- scope:
-    path: faqs
-    type: faqs
-  values:
-    permalink: "/faqs/"
-    layout: faqs
-- scope:
-    path: uploads
-    type: uploads
-  values:
-    permalink: "/uploads/"
-    layout: uploads
-- scope:
-    path: media
-    type: media
-  values:
-    permalink: "/media/"
-    layout: media
-- scope:
-    path: consumer-blog
-    type: consumer-blog
-  values:
-    permalink: "/:collection/:name"
-    layout: post
-- scope:
-    path: news
-    type: news
-  values:
-    permalink: "/:collection/:name"
-    layout: post
-- scope:
-    path: how-to
-    type: how-to
-  values:
-    permalink: "/:collection/:name"
-    layout: post
-shortname: CPC
-company: Consumer Protection Council
-description: Protecting and enhancing consumer's interest through information, education
-  and enforcement of appropriate standards for goods and services.
-url: http://cpc.softcom.ng
-charset: UTF-8
-headquarters:
-  title: Headquarters
-  address: 17 Nile Street, Maitama, Abuja, FCT
-  phone: '0805 600 2020, 0805 600 3030'
-  email: contact@cpc.gov.ng
-social_media:
-  twitter: cpcnig
-  facebook: cpcng
-  instagram: cpcnigeria
-plugins:
-- jekyll-sitemap
-- jekyll-seo-tag
-- jekyll-feed
-- jekyll-paginate
-markdown: kramdown
-permalink: pretty
+  - scope:
+      type: blog
+    values:
+      permalink: /:collection/:year/:month/:day/:title/
+      image:
+      is_blog: true
+      layout: blog-single
+  - scope:
+      type: releases
+    values:
+      permalink: /news-events/:collection/:year/:month/:day/:title/
+      image:
+      is_releases: true
+      layout: news-single
+  - scope:
+      type: announcements
+    values:
+      permalink: /news-events/:collection/:year/:month/:day/:title/
+      image:
+      is_announcements: true
+      layout: announcements-single
+  - scope:
+      type: alerts
+    values:
+      permalink: /news-events/:collection/:year/:month/:day/:title/
+      image:
+      is_alerts: true
+      layout: alerts-single
+  - scope:
+      type: events
+    values:
+      permalink: /news-events/:collection/:title/
+      event_date:
+      event_time:
+      event_summary:
+      event_venue:
+      image:
+      is_events: true
+      layout: events-single
+  - scope:
+      type: gallery
+    values:
+      permalink: /:collection/:title/
+      is_gallery: true
+
+# Include folders
 include:
-- _pages
+  - _pages
+
+
+# Handling Sass
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Exclude from processing.
 exclude:
-- Gemfile
-- Gemfile.lock
-- node_modules
-- vendor/bundle/
-- vendor/cache/
-- vendor/gems/
-- vendor/ruby/
-- package.json
-- dev
-- ".gitignore"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore
