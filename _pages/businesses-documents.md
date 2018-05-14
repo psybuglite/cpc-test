@@ -1,6 +1,7 @@
 ---
 title: Relevant Business Documents
+permalink: "/businesses/documents"
 layout: documents
-permalink: /businesses/documents
 document: businesses
 ---
+

@@ -1,14 +1,15 @@
 ---
-layout: page
 title: Audit Unit
 permalink: "/about/departments/audit"
+layout: page
 main: |-
-    The Internal Audit Unit reports directly to the Director General of the Council. The Unit ensures that the Council is in compliance with existing and emerging financial regulations and other extant rules of the Federal Government, and standards of recognised professional bodies.
+  The Internal Audit Unit reports directly to the Director General of the Council. The Unit ensures that the Council is in compliance with existing and emerging financial regulations and other extant rules of the Federal Government, and standards of recognised professional bodies.
 
-    The Unit operates by monitoring activities through independent review and examination of records based on established operational procedures and policies in order to assess the adequacy of systems of control.
+  The Unit operates by monitoring activities through independent review and examination of records based on established operational procedures and policies in order to assess the adequacy of systems of control.
 
-    The Internal Audit Unit also carries out Management audit, which is a comprehensive and constructive examination of all functions and systems, organisational structures and relationships, budgeting processes, staffing, information systems, policies, plans and objectives of the Council.
-    
-    The Unit files routine and periodic audit reports to relevant departments of
-    government.
+  The Internal Audit Unit also carries out Management audit, which is a comprehensive and constructive examination of all functions and systems, organisational structures and relationships, budgeting processes, staffing, information systems, policies, plans and objectives of the Council.
+
+  The Unit files routine and periodic audit reports to relevant departments of
+  government.
 ---
+

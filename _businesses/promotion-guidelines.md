@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Sales Promotion Guidelines
 permalink: "/businesses/sales-promotion-guidelines/"
+layout: page
 List:
 - title: Part 1. Introduction
   body: |-
@@ -102,8 +102,9 @@ List:
 
     b. A complete list of winners, including contact details and prices won must be provided to the Council not later than 3 (three) days after the ‘draw’(s).
 - title: Part 9. Denial of Application
-  body: |-
-    a. The Council reserves the right to reject any Application for a sales promotion. In the event of such denial, the Council shall notify the promoter by an NOD within 3 (three) working days. The NOD conveying denial shall state reasons for the denial.
+  body: a. The Council reserves the right to reject any Application for a sales promotion.
+    In the event of such denial, the Council shall notify the promoter by an NOD within
+    3 (three) working days. The NOD conveying denial shall state reasons for the denial.
 - title: Part 10. Sanctions/Penalties
   body: |-
     It shall be a violation of law for which sanctions or penalties may be imposed by the Council when a promoter/applicants;
@@ -130,3 +131,4 @@ List:
 
     b. An appeal must be in writing and received by the Council within seven (7) working days of the rejection or revocation stating the reasons for the appeal, and providing additional information for the appeal or possible reconsideration by the Council.
 ---
+
