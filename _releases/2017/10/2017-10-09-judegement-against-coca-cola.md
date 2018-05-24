@@ -1,7 +1,8 @@
 ---
 title: CPC Dissociates self from N17M Judgement Against Coca-Cola
-date: 2017-10-09
+date: 2017-10-09 00:00:00 +01:00
 ---
+
 Our attention has been drawn to a publication suggesting that the Consumer Protection Council (CPC) secured judgment in the sum of N17 Million against Coca-Cola from the Supreme Court of Nigeria. 
 
 Although the story factually reports that the current Director General of the CPC prior to his appointment as Director General was a partner at SimmonsCooper Partners, and in that role, represented the respondent in that Appeal (Mrs Titilayo Akisanya) in this case, which emanated from the National Industrial Court as far back as 2012. 

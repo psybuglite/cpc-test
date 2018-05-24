@@ -1,4 +1,8 @@
 ---
+title: Finance And Accounts
+---
+
+---
 layout: page
 title: Finance and Accounts Department
 permalink: "/about/departments/finance"

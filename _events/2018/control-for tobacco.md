@@ -1,12 +1,18 @@
 ---
-title: "Implementation of tobacco control law: CPC pledges fair deal for all stakeholders in enforcement"
+title: 'Implementation of tobacco control law: CPC pledges fair deal for all stakeholders in
+  enforcement'
 event_number: 2
-# event_date: '2018-04-24'
 event_time: ''
 event_venue: ''
-caption: 'West Africa Sub-Regional Coordinator, Campaign for Tobacco-free Kids, Mrs. Hilda Ochefu (second left) presenting a customized T-Shirt to the Director General Consumer Protection Council (CPC), Babatunde Irukera, while Deputy Executive Director, Environmental Rights Action, Mr. Akinbode Oluwafemi (left), Director, Surveillance and Enforcement Department CPC, Mrs Leke Ogundipe (second right) and Director, Consumer Education, Mrs. Mopelola Akeju watch with admiration.'
-image: /uploads/tobacco-01.jpg
+caption: West Africa Sub-Regional Coordinator, Campaign for Tobacco-free Kids, Mrs.
+  Hilda Ochefu (second left) presenting a customized T-Shirt to the Director General
+  Consumer Protection Council (CPC), Babatunde Irukera, while Deputy Executive Director,
+  Environmental Rights Action, Mr. Akinbode Oluwafemi (left), Director, Surveillance
+  and Enforcement Department CPC, Mrs Leke Ogundipe (second right) and Director, Consumer
+  Education, Mrs. Mopelola Akeju watch with admiration.
+image: "/uploads/tobacco-01.jpg"
 ---
+
 The Consumer Protection Council (CPC) has assured that it will ensure all interests are balanced in the enforcement of the provisions of the National Tobacco Control Act 2015 for the protection of consumers.
 
 CPC’s Director General, Babatunde Irukera made the assertion on Wednesday (July 19, 2017) at the Council’s headquarters in Abuja when a delegation of the Nigerian Tobacco Control Alliance led by the Chairman of the alliance Governing Board, who is also the Deputy Director of the Environmental Rights Action, Mr. Akinbode Oluwafemi and the Sub- Regional Coordinator, West Africa, of the Campaign for Tobacco-Free Kids, Mrs. Hilda Ochefu, paid him a courtesy call.
