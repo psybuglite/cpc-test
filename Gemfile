@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Jekyll
-gem 'jekyll', '3.8.0'
+gem 'jekyll', '3.8.2'
 
 # Plugins
 group :jekyll_plugins do

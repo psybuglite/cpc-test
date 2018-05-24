@@ -1,5 +1,5 @@
 ---
-title: CPC Media Gallery
+title: Gallery
 permalink: "/gallery/"
 summary: 
 layout: gallery

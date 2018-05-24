@@ -18,3 +18,18 @@
         </div>
     </div>
 </section>
+
+<script>
+
+    var now = new Date();
+    var options = {
+        year: 'numeric',
+        month: 'long'
+    };
+
+    var date = now.toLocaleString('en-us', options);
+    var cpcDate = document.querySelector(".date");
+
+    cpcDate.innerHTML = date;
+
+</script>

@@ -5,14 +5,14 @@ layout: default
     <div class="wrapper">
         {% include lists/breadcrumbs.html %}
         <h2>{{ page.title }}</h2>
-        <p>{{ page.summary }}</p>
+        <p> {{ page.summary }}</p>
     </div>
     
 </section>
 
 <section class="maxwidth-sl mx-auto sub-container">
     <div class="wrapper">
-        <h3>Regulators</h3>
+        <h2>Regulators</h2>
         <ul class="none">
             {% for regulator in site.regulators %}
             <li>
@@ -22,7 +22,7 @@ layout: default
             {% endfor %}
         </ul>
         <br>
-        <h3>International and Regional Development Partners</h3>
+        <h2>International and Regional Development Partners</h2>
         <ul class="none">
             {% for partner in site.partners %}
             <li>

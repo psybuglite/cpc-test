@@ -5,7 +5,6 @@ layout: default
     <div class="wrapper top-heading">
         {% include lists/breadcrumbs.html %}
         <h2>{{ page.title }}</h2>
-        <p>{{ page.summary }}</p>
     </div>
 </section>
 <section class="maxwidth-sl mx-auto pb-1">
@@ -16,7 +15,9 @@ layout: default
             {% for document in ngos %}
                 <li>
                     <h3>{{ document.title }}</h3>
-                    <a href="{{ document.file | prepend: site.url }}" download>Download file</a>
+                    <div class="mb-1">
+                        <a href="{{ document.file | prepend: site.url }}" download><button class="btn btn-brand p-1 border prefix smalltext">Download file</button>{% include tools/icons.html icon="download" %}</a>
+                    </div>
                 </li>
             {% endfor %}
         {% else %}
@@ -24,7 +25,9 @@ layout: default
             {% for document in businesses %}
                 <li>
                     <h3>{{ document.title }}</h3>
-                    <a href="{{ document.file | prepend: site.url }}" download>Download file</a>
+                    <div class="mb-1">
+                        <a href="{{ document.file | prepend: site.url }}" download><button class="btn btn-brand p-1 border prefix smalltext">Download file</button>{% include tools/icons.html icon="download" %}</a>
+                    </div>
                 </li>
             {% endfor %}
         {% endif %}

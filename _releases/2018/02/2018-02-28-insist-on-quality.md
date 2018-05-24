@@ -1,6 +1,5 @@
 ---
-title: "CPC charges consumers to insist on quality products
-"
+title: "CPC charges consumers to insist on quality products"
 date: 2018-02-28
 ---
 The Director General of the Consumer Protection Council (CPC), Babatunde Irukera, has said that it is high time that Nigerian consumers began to insist on quality products being sold to them in the market-place. 

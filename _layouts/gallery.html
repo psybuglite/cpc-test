@@ -6,7 +6,6 @@ layout: default
     <div class="wrapper">
         {% include lists/breadcrumbs.html %}
         <h2>{{ page.title }}</h2>
-        <p>{{ page.summary }}</p>
     </div>
 </section>
 
@@ -77,21 +76,65 @@ layout: default
 
 </div>
 
+
+
 <section class="maxwidth-sl mx-auto clearfix">
     <div class="wrapper">
+        {% if page.title == "How To..." %}
+            <div class="grid is-multi-col py-1 mostly-3">
+                {% assign videos = site.how-tos | where: "isvideo", true %}
+                {% for item in videos %}
+                    <a href="{{ item.permalink | prepend: site.url }}">
+                        <div class="pos-rel smalltext">
+                            {% include tools/icons.html icon="play-button" %}
+                            <img src="{{ item.featured_image }}" alt="">
+                        </div>
+                        <p class="py-1 microtext">
+                            {{ item.name }}
+                        </p>
+                    </a>
+                {% endfor %}
+            </div>
+            <div class="grid mt-2 is-multi-col mostly-4 my-gallery gallery" itemscope itemtype="http://schema.org/ImageGallery">
+                {% assign graphic = site.how-tos | where: "isgraphic", true %}
+                {% for item in graphic %}
+                <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="{{ item.image | prepend: site.url }}" itemprop="contentUrl" data-size="{{ item.dimensions }}">
+                        <img src="{{ item.image | prepend: site.url }}" itemprop="thumbnail" alt="{{ item.title }}" />
+                    </a>
+                    <figcaption itemprop="caption description" class="nanotext tx-c">{{ item.title }}</figcaption>
+                    <p class="py-1 microtext">
+                        {{ item.title }}
+                    </p>
+                </figure>
+                {% endfor %}
+            </div>
+        {% else %}
         <div class="grid is-multi-col mostly-4 my-gallery gallery" itemscope itemtype="http://schema.org/ImageGallery">
-            {% for item in site.gallery %}
+            {% if page.title == "Consumer Education Materials" %}
+                {% for item in site.education %}
                 <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
                     <a href="{{ item.image | prepend: site.url }}" itemprop="contentUrl" data-size="{{ item.dimensions }}">
                         <img src="{{ item.image | prepend: site.url }}" itemprop="thumbnail" alt="{{ item.title }}" />
                     </a>
                     <figcaption itemprop="caption description" class="nanotext tx-c">{{ item.title }}</figcaption>
                 </figure>
-            {% endfor %}
+                {% endfor %}
+
+            {% elsif page.title == "Gallery" %}
+                {% for item in site.gallery %}
+                    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="{{ item.image | prepend: site.url }}" itemprop="contentUrl" data-size="{{ item.dimensions }}">
+                            <img src="{{ item.image | prepend: site.url }}" itemprop="thumbnail" alt="{{ item.title }}" />
+                        </a>
+                        <figcaption itemprop="caption description" class="nanotext tx-c">{{ item.title }}</figcaption>
+                    </figure>
+                {% endfor %}
+            {% endif %}
+        {% endif %}
         </div>
     </div>
 </section>
-
 
 
 <script>

@@ -4,7 +4,7 @@ layout: default
 <div class="maxwidth-sl mx-auto clearfix">
     <section class="left-70 wrapper">
         <ul class="carousel first-carousel none" data-flickity='{ "autoPlay": 6000, "adaptiveHeight": true, "contain": true, "prevNextButtons": true, "pageDots": false, "wrapAround": true}'>
-            {% assign sorted = site.releases | where_exp: "page", "page.image contains 'uploads'" %}
+            {% assign sorted = site.events | where_exp: "page", "page.image contains 'uploads'" %}
             {% for post in sorted limit: 6 %}
                 <li class="carousel-cell">
                     {% if post.image %}
@@ -18,18 +18,18 @@ layout: default
                     </div>
                     </a>
                 </li>
-        {% endfor %}
+            {% endfor %}
         </ul>
     </section>
     <aside class="right-30 sidebar wrapper">
         {% for item in site.actions %}
             <div class="take-action">
-                <h3 class="m-0 pb-h">{{ item.title }}</h3>
+                <h3 class="m-0 pb-1">{{ item.title }}</h3>
                 <ul class="none">
                     {% for entry in item.subpages %}
                     <li>
                         <a href="">
-                            <div class="p-1 boxshadow d-flx mb-h a-i-c">
+                            <div class="p-h boxshadow d-flx mb-h a-i-c">
                                 {% case entry.name %}
                                     {% when 'File a Complaint' %}
                                         {% include tools/icons.html icon="file-complaint" %}
@@ -41,7 +41,7 @@ layout: default
                                         {% include tools/icons.html icon="rights" %}
                                 {% endcase %}
                                 <div>
-                                    <p class="nanotext mb-hh mt-0"><strong>{{ entry.name }}</strong></p>
+                                    <h4 class="microtext mb-hh mt-0">{{ entry.name }}</h4>
                                     <p class="nanotext co-readablegray smalllh m-0">{{ entry.text }}</p>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@ layout: default
     <div class="wrapper">
         <div class="d-flx al-i-c mb-2">
             <h3 class="m-0 prefix is-even-wider">Consumer Blog</h3>
-            <span class="suffix nanotext prefix">View More {% include tools/icons.html icon="chevron-right" %}</span>
+            <a href="{{ site.url}}/blog"><span class="suffix nanotext prefix">View More {% include tools/icons.html icon="chevron-right" %}</span></a>
         </div>
         <div class="grid is-multi-col mostly-2">
                 {% assign sorted = site.blog | where_exp: "page", "page.image contains 'uploads'" %}
@@ -105,3 +105,5 @@ layout: default
         </div>
     </div>
 </section>
+
+

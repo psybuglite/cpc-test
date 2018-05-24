@@ -1,7 +1,6 @@
 ---
 title: "CPC holds critical engagement with the media"
 date: 2017-11-12
-image: /uploads/strategic-01.jpg
 ---
 The Consumer Protection Council (CPC) had a strategic engagement with the media as part of its desire to forge a workable partnership with the media for a virile consumer protection regime in Nigeria.
 

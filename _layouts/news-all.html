@@ -7,6 +7,7 @@ layout: default
     </section>
 </div>
 
+
 <div class="maxwidth-sl mx-auto clearfix">
     <section class="left-70 wrapper">
         {% if page.title == 'Announcements' %}
@@ -21,6 +22,7 @@ layout: default
             {% assign collection = paginator.posts | where: 'is_events', 'true' %}
         {% endif %}
         {% assign postsByMonth = collection | group_by_exp: "post", "post.date | date: '%b - %Y'" %}
+
         {% for month in postsByMonth %}
             <div class="post-group">
                 <h2 class="micro-caps co-sweetgray m-0 pb-h archive-month">
@@ -32,7 +34,17 @@ layout: default
                     {% endfor %}
                 </ul>
             </div>
-        {% endfor %}
+            {% endfor %}
+
+        <!-- <div class="pagination">
+            {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | prepend: site.url }}" class="previous">Previous</a>
+            {% endif %}
+            <span class="page_number prefix suffix is-wider">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | prepend: site.url }}" class="next">Next</a>
+            {% endif %}
+        </div> -->
     </section>
     <aside class="right-30 sidebar wrapper">
         {% include components/sidebar.html %}

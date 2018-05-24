@@ -19,15 +19,17 @@ layout: default
             {% for page in pages %}
                 <a href="{{ page.url | prepend: site.url }}" class="icon-move-on-hover">
                     <h3 class="microtext">{{ page.title }}</h3>
-                    <p class="nanotext">
+                    <p class="nanotext co-readablegray">
                         {{ page.summary | truncatewords: 15, '...' }} 
                     </p>
-                    <span class="has-icon">
+                    <span class="has-icon nanotext">
                         Read More {% include tools/icons.html icon="chevron-right" %}
                     </span>
                 </a>
             {% endfor %}
             </div>
-            <h4 class="py-2"><a href="{{ page.image | prepend: site.url }}" download>Download Organogram</a></h4>
+            <div class="mt-1 py-2">
+                <a href="{{ page.image | prepend: site.url }}" download><button class="btn btn-brand p-1 border prefix smalltext">Download organogram</button>{% include tools/icons.html icon="download" %}</a>
+            </div>
     </div>
 </section>

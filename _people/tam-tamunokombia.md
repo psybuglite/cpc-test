@@ -1,7 +1,7 @@
 ---
 title: Tam Tamunokonbia
 layout: person
-designation: Head, Legal Services
+designation: Deputy Director, Legal Services
 image: /uploads/people/tamunokonbia.jpg
 level: Head
 rank: 7

@@ -5,12 +5,12 @@
                 {{ post.title }}
             </h3>
             {% if post.event_date %}
-                <span class="nano-caps ff-sans-serif co-sweetgray events-date d-ibl pos-rel mt-1">
+                <!-- <span class="nano-caps ff-sans-serif co-sweetgray events-date d-ibl pos-rel mt-1">
                     <span class="absolute-middle tx-c">
                         <span class="d-blk">{{ post.event_date | date: '%b' }}</span>
                         <span>{{ post.event_date | date: '%d' }}</span>
                     </span>
-                </span>
+                </span> -->
             {% else %}
                 <span class="nanotext co-sweetgray d-blk pt-hh">
                     {{ post.date | date: "%b %d" }}

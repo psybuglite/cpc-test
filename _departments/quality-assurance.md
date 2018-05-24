@@ -1,7 +1,13 @@
 ---
 layout: page
-title: Quality Assurance and Development Department
+title: Quality Assurance and Development (QAD) Department
 permalink: "/about/departments/quality-assurance"
 main: |-
-    Quality Assurance &amp; Development: The satisfaction and safety of the Nigerian consumer are paramount. The Council is commit to nationwide quality assessment of products and services, through inputs into national &amp; international standards, sampling, analysis, investigation, process auditing, developing and issuance of guidelines/standard operating procedures (SOPs) in order to ensure that products, services and processes are of good quality, safe and meet consumers’ expectation, while giving value for money.
+    The department is responsible for testing and monitoring of products and services quality to confirm compliance with technical, safety and health standards. It manages the Council’s laboratories and interfaces with other organisations with similar facilities and mandates.
+
+    The department works closely with other operational departments by providing technical data and other necessary expertise for monitoring of products and services for public enlightenment and the resolution of consumer complaints.
+
+    It is the Council’s direct and functional interface with national and international standards bodies and other regulators with respect to the development and review of standards for products and services. The department also issues guidelines for the enforcement of quality standards to safeguard consumers’ interest and guarantee value for money.
+
+    It collaborates with international organisations to enhance consumer protection and ensure ethical practices that guarantee efficient cross-border trade and best global practices.
 ---

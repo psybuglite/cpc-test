@@ -1,7 +1,6 @@
 ---
 title: Any electricity distribution company that undermines consumer rights violates the law - CPC
 date: 2018-03-01
-image: /uploads/townhall-01.jpg
 ---
 The Director-General, Consumer Protection Council (CPC), Babatunde Irukera, has said any electricity distribution company that abuses the rights of consumers violates the law.
 

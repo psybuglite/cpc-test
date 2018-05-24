@@ -6,7 +6,7 @@ permalink: /news-events/events/
 pagination: 
   enabled: true
   collection: events
-  per_page: 15
+  per_page: 21
   sort_reverse: true
   sort_field: 'date'
 ---

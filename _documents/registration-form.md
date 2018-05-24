@@ -1,5 +1,5 @@
 ---
 title: NGO Registration Form
 document: ngos
-file: /uploads/files/ngo-registration-for
+file: /uploads/files/ngo-registration-form.docx
 ---

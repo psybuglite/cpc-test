@@ -3,7 +3,7 @@ title: Consumer Protection Council
 shortname: cpc
 legal_tag: The Council
 description: CPC is the apex consumer protection agency in Nigeria established to improve the well-being of the people.
-url: 'http://cpc.softcom.ng/'
+url: 'http://cpc.softcom.ng'
 timezone: Africa/Lagos
 
 
@@ -19,7 +19,7 @@ pagination:
 mainnav:
   - section: Home
     url: /
-  - section: About
+  - section: About Us
     url: /about/
     pages:
       - page: The Council
@@ -38,7 +38,7 @@ mainnav:
         url: /faqs/
       - page: Contact
         url: /contact/
-  - section: For Consumers
+  - section: Consumers
     url: /consumers/
     pages:
       - page: Consumer Rights
@@ -55,14 +55,16 @@ mainnav:
         url: /consumers/testimonials/
       - page: Consumer Blog
         url: /blog/
-  - section: For Businesses
+  - section: Businesses
     url: /businesses/
     pages:
       - page: Business Obligations
         url: /businesses/obligations/
-      - page: Sales Promotion Guidelines
+      - page: Sales Promotions Regulations and Guidelines
         url: /businesses/sales-promotion-guidelines/
-      - page: Relevant Documents
+      - page: Register Sales Promotion
+        url: /businesses/register-sales-promotion/
+      - page: Sales Promotion Documents
         url: /businesses/documents/
   - section: NGOs
     url: /ngos/
@@ -133,9 +135,9 @@ apps:
   - title:  Apps
     subpages:
       - name: Android 
-        link: /
+        link: https://play.google.com/store/apps/details?id=com.softcom.cpc.android
       - name: iOS
-        link: /
+        link: https://itunes.apple.com/us/app/consumer-protection-council/id1355501646?mt=8&ign-mpt=uo%3D4
 
 
 # Legal
@@ -153,10 +155,11 @@ legal:
 # Headquarters
 headquarters:
   title:    Headquarters
-  address:  17 Nile Street, Maitama, <br /> Abuja, FCT, Nigeria.
+  address:  No. 17 Nile Street, Maitama, Abuja.
   phone:    0805 600 2020, 0805 600 3030
   email:    'contact@cpc.gov.ng'
   contact_url:   /contact/
+  head:     Babatunde Irukera
 
 
 # Build settings
@@ -192,7 +195,10 @@ collections:
     title: Events
     output: true
   gallery:
-    title: CPC Media Gallery
+    title: Gallery
+    output: true
+  education:
+    title: Consumer Education Materials
     output: true
   departments:
     title: Departments and Units
@@ -240,7 +246,7 @@ defaults:
       permalink: /:collection/:year/:month/:day/:title/
       image:
       is_blog: true
-      layout: blog-single
+      layout: news-single
   - scope:
       type: releases
     values:
@@ -254,14 +260,14 @@ defaults:
       permalink: /news-events/:collection/:year/:month/:day/:title/
       image:
       is_announcements: true
-      layout: announcements-single
+      layout: news-single
   - scope:
       type: alerts
     values:
       permalink: /news-events/:collection/:year/:month/:day/:title/
       image:
       is_alerts: true
-      layout: alerts-single
+      layout: news-single
   - scope:
       type: events
     values:
@@ -272,9 +278,14 @@ defaults:
       event_venue:
       image:
       is_events: true
-      layout: events-single
+      layout: news-single
   - scope:
       type: gallery
+    values:
+      permalink: /:collection/:title/
+      is_gallery: true
+  - scope:
+      type: education
     values:
       permalink: /:collection/:title/
       is_gallery: true

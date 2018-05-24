@@ -1,6 +1,7 @@
 ---
 title: "CPC congrautlates Airpeace on acquiring the first Boeing 777 to be registered in Nigeria"
 date: 2018-02-20
+document: /uploads/releases/airpeace.jpg
 ---
 The Consumer Protection Council congratulates Airpeace on another major milestone on its journey to becoming a major carrier of choice in Nigeria by acquiring a Boeing 777.
 

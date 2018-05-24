@@ -1,6 +1,6 @@
 ---
-title: Relevant Business Documents
+title: Sales Promotion Documents
 layout: documents
-permalink: /businesses/documents
+permalink: /businesses/documents/
 document: businesses
 ---

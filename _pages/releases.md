@@ -6,7 +6,8 @@ permalink: /news-events/releases/
 pagination:
   enabled: true
   collection: releases
-  per_page: 15
+  per_page: 21
   sort_reverse: true
   sort_field: 'date'
+  paginate_path: '/news-events/releases/:num/'
 ---

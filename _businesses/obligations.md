@@ -22,4 +22,6 @@ main: |-
     Notify consumers of any imminent public hazard in thier products and withdraw such products from the market.
 
     Not issue wrongful or deceptive advertisements about a product or service.
+
+    Register all sales promotion with the Council.
 ---
