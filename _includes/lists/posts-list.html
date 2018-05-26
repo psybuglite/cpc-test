@@ -11,10 +11,12 @@
                         <span>{{ post.event_date | date: '%d' }}</span>
                     </span>
                 </span> -->
-            {% else %}
+            {% elsif post.date %}
                 <span class="nanotext co-sweetgray d-blk pt-hh">
                     {{ post.date | date: "%b %d" }}
                 </span>
+            {% else %}
+
             {% endif %}
         </div>
         {% if post.image %}

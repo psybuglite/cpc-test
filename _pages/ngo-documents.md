@@ -1,7 +1,6 @@
 ---
 title: Relevant NGO Documents
-permalink: "/ngos/documents/"
 layout: documents
+permalink: /ngos/documents/
 document: ngos
 ---
-

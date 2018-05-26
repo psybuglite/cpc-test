@@ -1,13 +1,12 @@
 ---
 title: Events
-permalink: "/news-events/events/"
 description: Info...
 layout: news-all
-pagination:
+permalink: /news-events/events/
+pagination: 
   enabled: true
   collection: events
   per_page: 3
   sort_reverse: true
-  sort_field: date
+  sort_field: 'date'
 ---
-

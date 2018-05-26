@@ -1,49 +1,22 @@
 ---
 layout: default
-autopages:
-  permalink: "/collections/with/tag/:coll"
-pagination:
-  enabled: true
-  collection: all
-  debug: false
 ---
-
 <div class="maxwidth-sl mx-auto clearfix">
     <section class="left-70 wrapper">
         {% include lists/breadcrumbs.html %}
     </section>
 </div>
 
+<b>{% if page.autopages %}{{page.autopages.display_name}}{% endif %}</b>
+
 <div class="maxwidth-sl mx-auto clearfix">
     <section class="left-70 wrapper">
-        {% if page.title == 'Announcements' %}
-            {% assign collection = paginator.posts | where: 'is_announcements', 'true' %}
-        {% elsif page.title == 'Releases' %}
-            {% assign collection = paginator.posts | where: 'is_releases', 'true' %}
-        {% elsif page.title == 'Consumer Blog' %}
-            {% assign collection = paginator.posts | where: 'is_blog', 'true' %}
-        {% elsif page.title == 'Alerts' %}
-            {% assign collection = paginator.posts | where: 'is_alerts', 'true' %}
-        {% else %}
-            {% assign collection = paginator.posts | where: 'is_events', 'true' %}
-        {% endif %}
 
-
-        <!-- {% for post in paginator.posts %}
-        <li>
-            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.book.rank %} | Rank: {{ post.book.rank }}{% endif %}{% if post.collection %} | {{ post.collection }}{% endif %}{% if post.tags %}<br>Tags: {{ post.tags }}{% endif %}</span>
-            <h2>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-            </h2>
-        </li>
-        {% endfor %} -->
-
-        {% assign postsByMonth = collection | group_by_exp: "post", "post.date | date: '%b - %Y'" %}
 
         {% for post in paginator.posts %}
             <div class="post-group">
                 <h2 class="micro-caps co-sweetgray m-0 pb-h archive-month">
-                    {{ month.name }}
+                    {{ post.date | date: "%b %-d, %Y" }}
                 </h2>
                 <ul class="none">
                     {% include lists/posts-list.html %}
