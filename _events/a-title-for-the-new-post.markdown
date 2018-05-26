@@ -1,7 +1,7 @@
 ---
 title: A title for the new post
 date: 2018-05-26 16:59:00 +01:00
-event_date: 2018-05-17 00:00:00 +01:00
+event_date: 2018-05-26 00:00:00 +01:00
 event_summary: This is the summary of the post
 image: "/uploads/Screen%20Shot%202018-03-26%20at%2010.12.19%20PM.png"
 ---
