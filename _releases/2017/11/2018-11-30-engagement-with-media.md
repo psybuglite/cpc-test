@@ -1,8 +1,7 @@
 ---
-title: CPC holds critical engagement with the media
-date: 2017-11-12 00:00:00 +01:00
+title: "CPC holds critical engagement with the media"
+date: 2017-11-12
 ---
-
 The Consumer Protection Council (CPC) had a strategic engagement with the media as part of its desire to forge a workable partnership with the media for a virile consumer protection regime in Nigeria.
 
 Director General of the Council, Babatunde Irukera, considered this engagement as critical in his administration’s priorities because of the role and place of the media in the crusade for an enhanced consumer protection in Nigeria.

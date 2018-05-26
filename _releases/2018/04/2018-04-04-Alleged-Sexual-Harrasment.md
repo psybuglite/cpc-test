@@ -1,14 +1,13 @@
 ---
-title: Alleged Sexual Harrasment of a Student by a Lecturer at the Obafemi Awolowo
-  University
-date: 2018-04-30 00:00:00 +01:00
+title: "Alleged Sexual Harassment of a Student by a Lecturer at the Obafemi Awolowo University"
+date: 2018-04-30
 act: Pursuant to Section 2(f)(i) of the Consumer Protection Council Act
-document: "/uploads/releases/oau.png"
+document: /uploads/releases/oau.png
 ---
 
 The Consumer Protection Council (CPC) has keenly followed a raging controversy regarding the sexually and emotionally abusive conduct of demanding, and or providing sexual gratification in exchange for favourable grades in school.
 
-Although the widely discussed controversy underscores an allegedly pervasive practice, the current specific subject of discussion now, is a leaked and widely circulated audio clip that appeared to have captured a telephonic conversation or “negotiation” between a female student and a member of faculty at ObafemiAwolowo University (OAU), Ile Ife. The audio clip has been authenticated and both the member of faculty and student/victim identified.
+Although the widely discussed controversy underscores an allegedly pervasive practice, the current specific subject of discussion now, is a leaked and widely circulated audio clip that appeared to have captured a telephonic conversation or “negotiation” between a female student and a member of faculty at Obafemi Awolowo University (OAU), Ile Ife. The audio clip has been authenticated and both the member of faculty and student/victim identified.
 
 The Council notes the prompt and urgent actions taken by the authorities of OAU and commends the responsiveness so far displayed, in addressing a rather insidious and predatory incident.
 

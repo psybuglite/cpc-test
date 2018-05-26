@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="maxwidth-sl mx-auto clearfix">
     <section class="left-70 wrapper">
         {% include lists/breadcrumbs.html %}
@@ -11,7 +10,7 @@ layout: default
 
 <div class="maxwidth-sl mx-auto clearfix">
     <section class="left-70 wrapper">
-        {% if page.title == 'Announcements' %}
+        <!-- {% if page.title == 'Announcements' %}
             {% assign collection = paginator.posts | where: 'is_announcements', 'true' %}
         {% elsif page.title == 'Releases' %}
             {% assign collection = paginator.posts | where: 'is_releases', 'true' %}
@@ -21,7 +20,8 @@ layout: default
             {% assign collection = paginator.posts | where: 'is_alerts', 'true' %}
         {% else %}
             {% assign collection = paginator.posts | where: 'is_events', 'true' %}
-        {% endif %}
+        {% endif %} -->
+        
         {% assign postsByMonth = collection | group_by_exp: "post", "post.date | date: '%b - %Y'" %}
 
         {% for month in postsByMonth %}
@@ -35,7 +35,7 @@ layout: default
                     {% endfor %}
                 </ul>
             </div>
-            {% endfor %}
+        {% endfor %}
 
         <!-- <div class="pagination">
             {% if paginator.previous_page %}
