@@ -1,18 +1,14 @@
 ---
 layout: default
 ---
-
 <div class="maxwidth-sl mx-auto clearfix">
     <section class="left-70 wrapper">
         {% include lists/breadcrumbs.html %}
     </section>
 </div>
 
-<b>{% if page.autopages %}{{page.autopages.display_name}}{% endif %}</b>
-
 <div class="maxwidth-sl mx-auto clearfix">
     <section class="left-70 wrapper">
-
 
         {% for post in paginator.posts %}
             <div class="post-group">

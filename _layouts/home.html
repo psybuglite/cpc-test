@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="maxwidth-sl mx-auto clearfix">
     <section class="left-70 wrapper">
         <ul class="carousel first-carousel none" data-flickity='{ "autoPlay": 6000, "adaptiveHeight": true, "contain": true, "prevNextButtons": true, "pageDots": false, "wrapAround": true}'>
@@ -29,7 +28,7 @@ layout: default
                 <ul class="none">
                     {% for entry in item.subpages %}
                     <li>
-                        <a href="">
+                        <a href="{% if entry.link contains consumers %} {{ entry.link | prepend: site.url }} {% else %} {{ entry.link  }} {% endif %}">
                             <div class="p-h boxshadow d-flx mb-h a-i-c">
                                 {% case entry.name %}
                                     {% when 'File a Complaint' %}

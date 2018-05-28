@@ -1,7 +1,6 @@
 ---
 title: Sitemap
-permalink: "/sitemap/"
+permalink: /sitemap/
 layout: page
 grid: true
 ---
-

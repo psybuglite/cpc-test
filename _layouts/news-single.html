@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="maxwidth-sl mx-auto clearfix">
     <section class="left-70 wrapper">
         <div>
@@ -34,10 +33,10 @@ layout: default
     </aside>
 </div>
 
-{% if page.document %}
+{% if page.downloadable_file %}
     <div class="maxwidth-sl mx-auto clearfix">
         <section class="wrapper">
-            <h4><a class="uline" href="{{ page.document | prepend: site.url }}" download>Download as an image</a></h4>
+            <h4><a class="uline" href="{{ page.downloadable_file | prepend: site.url }}" download>Download this article</a></h4>
         </section>
     </div>
 {% endif %}
