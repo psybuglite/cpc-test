@@ -274,7 +274,7 @@ headquarters:
 markdown: kramdown
 include:
 - _pages
-plugins:
+gems:
 - jekyll-paginate-v2
 autopages:
   enabled: true
@@ -286,6 +286,7 @@ sass:
   sass_dir: _sass
   style: compressed
 exclude:
+- Gemfile
 - Gemfile.lock
 - node_modules
 - vendor/bundle/
