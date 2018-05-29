@@ -274,7 +274,7 @@ headquarters:
 markdown: kramdown
 include:
 - _pages
-gems:
+plugins:
 - jekyll-paginate-v2
 autopages:
   enabled: true
