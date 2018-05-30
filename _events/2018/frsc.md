@@ -1,15 +1,15 @@
 ---
-title: "CPC PARTNERS FRSC ON ROAD SAFETY"
+title: CPC PARTNERS FRSC ON ROAD SAFETY
 event_number: 2
-# event_date: '2018-04-24'
 event_time: ''
 event_venue: ''
 caption: 'L-R: Federal Road Safety Commission (FRSC), Corps Marshal, Boboye Oyeyemi;
-Consumer Protection Council (CPC) Director General, Babatunde Irukera and CPC
-Director, Surveillance and Enforcement, Mrs Leke Ogundipe during the Director
-General’s visit to FRSC Headquarters in Abuja.'
-image: /uploads/frsc-01.jpg
+  Consumer Protection Council (CPC) Director General, Babatunde Irukera and CPC Director,
+  Surveillance and Enforcement, Mrs Leke Ogundipe during the Director General’s visit
+  to FRSC Headquarters in Abuja.'
+image: "/uploads/frsc-01.jpg"
 ---
+
 The Consumer Protection Council (CPC) and the Federal Road Safety Commission (FRSC) have resolved to strengthen partnership on issues of road safety and welfare of consumers.
 
 This was the outcome of a meeting between the Director General of the Council, Babatunde Irukera, and the Corps Marshal of the FRSC, Boboye Oyeyemi, when the director general paid a courtesy call on the Corps Marshal at the FRSC National Headquarters in Abuja.
